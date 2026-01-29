@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="960px"
+    android:layout_height="532px"
+    android:background="@drawable/record_tool_background_normal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72px"
+        android:textColor="#565656"
+        android:textSize="60px"
+        android:text="@string/enough_memory"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208px"
+        android:gravity="center"
+        android:textColor="#6a6a6a"
+        android:textSize="48px"
+        android:text="@string/storage_insufficient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="392px"
+        android:background="#ffe5e5e5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/is_ok"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:textSize="42px"
+        android:text="@string/ok"
+        android:gravity="center"
+        android:textColor="#77d5e5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

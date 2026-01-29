@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Skärminspelare</string>
+    <string name="device_not_support_screen_record">Tyvärr är skärminspelaren inte kompatibel med din enhet.</string>
+    <string name="permission_denied">Det krävs för att bevilja behörigheter för skärminspelare, annars kan skärmen inte spelas in.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Vill du spara inspelade uppgifter?</string>
+    <string name="cancel">Avbryt</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Ditt lagringsutrymme är nästan fullt, vill du spara de aktuella uppgifterna?</string>
+    <string name="save">Spara</string>
+    <string name="newline_recording">Skärminspelare</string>
+    <string name="tv_quality">Kvalitet</string>
+    <string name="tv_system_audio">Systemljud</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Inte tillräckligt med minne</string>
+    <string name="storage_insufficient">För att starta inspelning krävs minst 20 MB ledigt utrymme.</string>
+    <string name="setting_title">inställningar</string>
+    <string name="mic_option">Mikrofonalternativ</string>
+    <string name="Resolution">Upplösning</string>
+    <string name="built_mic">Inbyggd mikrofon</string>
+    <string name="system_auto">Systemljud</string>
+    <string name="micAndSystem">Mikrofon &amp; systemljud</string>
+    <string name="mute">Tyst</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Slut på minne</string>
+    <string name="recording_stop">Inspelningen har stoppats på grund av inte tillräckligt med utrymme på minnet. För att starta inspelning krävs minst 20 MB ledigt utrymme.</string>
+    <string name="exit_screen">Exit -skärminspelare?</string>
+    <string name="exit_message">Är du säker på att du vill lämna det här plugin?</string>
+    <string name="exit">Utgång</string>
+    <string name="save_to">Spara till</string>
+    <string name="locality">Lokalitet</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Spara för skärmregistermapp</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

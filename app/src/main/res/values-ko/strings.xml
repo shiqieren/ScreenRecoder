@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">화면 레코더</string>
+    <string name="device_not_support_screen_record">불행히도 화면 레코더는 장치와 호환되지 않습니다.</string>
+    <string name="permission_denied">화면 레코더에 대한 권한을 부여해야합니다. 그렇지 않으면 화면을 기록 할 수 없습니다.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">기록 된 데이터를 저장 하시겠습니까?</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+    <string name="low_space_content">저장 공간이 거의 가득 차 있습니다. 현재 데이터를 저장 하시겠습니까?</string>
+    <string name="save">저장</string>
+    <string name="newline_recording">화면 레코더</string>
+    <string name="tv_quality">품질</string>
+    <string name="tv_system_audio">시스템 오디오</string>
+    <string name="tv_micophone">마이크로폰</string>
+    <string name="enough_memory">메모리가 충분하지 않습니다</string>
+    <string name="storage_insufficient">시작 녹음을 위해서는 최소 20MB의 여유 공간이 필요합니다.</string>
+    <string name="setting_title">설정</string>
+    <string name="mic_option">마이크 옵션</string>
+    <string name="Resolution">해결</string>
+    <string name="built_mic">내장 마이크</string>
+    <string name="system_auto">시스템 오디오</string>
+    <string name="micAndSystem">마이크 및 시스템 오디오</string>
+    <string name="mute">음소거</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">기억이 없습니다</string>
+    <string name="recording_stop">메모리의 공간이 충분하지 않아 녹음이 중지되었습니다. 시작 녹음을 위해서는 최소 20MB의 여유 공간이 필요합니다.</string>
+    <string name="exit_screen">스크린 레코더 종료?</string>
+    <string name="exit_message">이 플러그인을 종료 하시겠습니까?</string>
+    <string name="exit">종료</string>
+    <string name="save_to">저장 위치</string>
+    <string name="locality">소재지</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">화면 레코드 폴더에 저장하십시오</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

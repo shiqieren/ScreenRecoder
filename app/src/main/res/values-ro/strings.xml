@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Înregistrator de ecran</string>
+    <string name="device_not_support_screen_record">Din păcate, Screen Recorder nu este compatibil cu dispozitivul tău.</string>
+    <string name="permission_denied">Necesită acordarea permisiunilor pentru Screen Recorder, altfel ecranul nu poate fi înregistrat.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Doriți să salvați datele înregistrate?</string>
+    <string name="cancel">Anula</string>
+    <string name="ok">Bine</string>
+    <string name="low_space_content">Spațiul de stocare este aproape plin, doriți să salvați datele curente?</string>
+    <string name="save">Salva</string>
+    <string name="newline_recording">Înregistrator de ecran</string>
+    <string name="tv_quality">Calitate</string>
+    <string name="tv_system_audio">Sistem audio</string>
+    <string name="tv_micophone">Microfon</string>
+    <string name="enough_memory">Nu este suficientă memorie</string>
+    <string name="storage_insufficient">Pentru a începe înregistrarea, este necesar un spațiu liber de cel puțin 20 MB.</string>
+    <string name="setting_title">Setări</string>
+    <string name="mic_option">Opțiune de microfon</string>
+    <string name="Resolution">Rezoluţie</string>
+    <string name="built_mic">Microfon încorporat</string>
+    <string name="system_auto">Sistem audio</string>
+    <string name="micAndSystem">Microfon și sistem audio</string>
+    <string name="mute">Mut</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Nu am memorie</string>
+    <string name="recording_stop">Înregistrarea a fost oprită din cauza spațiului insuficient în memorie. Pentru a începe înregistrarea, este necesar cel puțin 20 MB de spațiu liber.</string>
+    <string name="exit_screen">Ieși din Înregistratorul de ecran?</string>
+    <string name="exit_message">Sigur vrei să ieși din acest plugin?</string>
+    <string name="exit">Ieșire</string>
+    <string name="save_to">Salvați în</string>
+    <string name="locality">Stocare locală</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Salvare în folderul de înregistrare a ecranului</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

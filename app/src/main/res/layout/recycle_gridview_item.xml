@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="176px"
+    android:layout_height="200px"
+    android:layout_marginTop="38px"
+    android:layout_marginLeft="64px"
+    android:id="@+id/usb_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/local_img"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@drawable/local_file"
+        android:contentDescription="@string/locality"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/local_progressBar"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.hht.oemscreenrecoder.widgets.ShadowTextView
+        android:id="@+id/stroage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:text="@string/locality"
+        android:textSize="28px"
+        android:gravity="center_vertical"
+        android:textColor="@color/setting_title_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="17px"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

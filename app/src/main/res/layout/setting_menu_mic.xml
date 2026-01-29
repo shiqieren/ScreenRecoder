@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/menu_mic">
+
+    <RadioGroup
+        android:id="@+id/mic_choose"
+        android:layout_width="512px"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/mic_built_in"
+            android:layoutDirection="rtl"
+            android:layout_width="512px"
+            android:checked="true"
+            android:textColor="#fff2f4f8"
+            android:layout_height="112px"
+            android:background="@color/transparent"
+            android:button="@drawable/selector_choose_q"
+            android:text="Built-in microphone" />
+
+        <RadioButton
+            android:id="@+id/mic_option"
+            android:layoutDirection="rtl"
+            android:layout_width="512px"
+            android:layout_height="112px"
+            android:background="@color/transparent"
+            android:textColor="#fff2f4f8"
+            android:button="@drawable/selector_choose_q"
+            android:text="Microphone option" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

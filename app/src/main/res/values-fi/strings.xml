@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Näyttörekisteröinti</string>
+    <string name="device_not_support_screen_record">Valitettavasti näytön tallennin ei ole yhteensopiva laitteen kanssa.</string>
+    <string name="permission_denied">Se vaatii näytön tallentimen käyttöoikeuksien myöntämistä, muuten näyttöä ei voida tallentaa.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Haluatko tallentaa tallennetut tiedot?</string>
+    <string name="cancel">Peruuttaa</string>
+    <string name="ok">Hyvä</string>
+    <string name="low_space_content">Tallennustilasi on melkein täynnä, haluatko tallentaa nykyiset tiedot?</string>
+    <string name="save">Tallentaa</string>
+    <string name="newline_recording">Näyttörekisteröinti</string>
+    <string name="tv_quality">Laatu</string>
+    <string name="tv_system_audio">Järjestelmäääni</string>
+    <string name="tv_micophone">Mikrofoni</string>
+    <string name="enough_memory">Ei tarpeeksi muistia</string>
+    <string name="storage_insufficient">Aloitustallennusta varten vaaditaan vähintään 20 Mt vapaata tilaa.</string>
+    <string name="setting_title">asetukset</string>
+    <string name="mic_option">Mikrofonivaihtoehto</string>
+    <string name="Resolution">Resoluutio</string>
+    <string name="built_mic">Sisäänrakennettu mikrofoni</string>
+    <string name="system_auto">Järjestelmäääni</string>
+    <string name="micAndSystem">Mikrofoni- ja järjestelmäääni</string>
+    <string name="mute">Mykistä</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Muisti loppu</string>
+    <string name="recording_stop">Tallennus on lopetettu, koska muistiin ei ole tarpeeksi tilaa. Aloitustallennusta varten vaaditaan vähintään 20 Mt vapaata tilaa.</string>
+    <string name="exit_screen">Poistu näyttötallista?</string>
+    <string name="exit_message">Oletko varma, että haluat poistua tästä laajennuksesta?</string>
+    <string name="exit">Poistuminen</string>
+    <string name="save_to">Tallenna</string>
+    <string name="locality">Sijainti</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Tallenna näytötietueen kansioon</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

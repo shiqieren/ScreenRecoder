@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Registratore dello schermo</string>
+    <string name="device_not_support_screen_record">Sfortunatamente, lo screen registratore non è compatibile con il dispositivo.</string>
+    <string name="permission_denied">Richiede di concedere le autorizzazioni per il registratore dello schermo, altrimenti lo schermo non può essere registrato.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Vuoi salvare i dati registrati?</string>
+    <string name="cancel">Annulla</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Il tuo spazio di archiviazione è quasi pieno, vuoi salvare i dati correnti?</string>
+    <string name="save">Salva</string>
+    <string name="newline_recording">Registratore dello schermo</string>
+    <string name="tv_quality">Qualità</string>
+    <string name="tv_system_audio">Audio di sistema</string>
+    <string name="tv_micophone">Microfono</string>
+    <string name="enough_memory">Non abbastanza memoria</string>
+    <string name="storage_insufficient">Per la registrazione iniziale, è richiesto almeno 20 MB di spazio libero.</string>
+    <string name="setting_title">Impostazioni</string>
+    <string name="mic_option">Opzione microfono</string>
+    <string name="Resolution">Risoluzione</string>
+    <string name="built_mic">Microfono incorporato</string>
+    <string name="system_auto">Audio di sistema</string>
+    <string name="micAndSystem">Audio di microfono e sistema</string>
+    <string name="mute">Mute</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 X1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Fuori dalla memoria</string>
+    <string name="recording_stop">La registrazione è stata fermata a causa di non sufficiente spazio in memoria. Per la registrazione iniziale, è richiesto almeno 20 MB di spazio libero.</string>
+    <string name="exit_screen">Exit Screen Recorder?</string>
+    <string name="exit_message">Sei sicuro di voler uscire da questo plugin?</string>
+    <string name="exit">Uscita</string>
+    <string name="save_to">Salva in</string>
+    <string name="locality">Località</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Salva sulla cartella del record dello schermo</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

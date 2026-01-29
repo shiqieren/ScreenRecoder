@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">画面レコーダー</string>
+    <string name="device_not_support_screen_record">残念ながら、スクリーンレコーダーはデバイスと互換性がありません。</string>
+    <string name="permission_denied">画面レコーダーの権限を付与する必要があります。そうしないと、画面を記録できません。</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">記録されたデータを保存しますか？</string>
+    <string name="cancel">キャンセル</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">ストレージスペースはほぼいっぱいですが、現在のデータを保存しますか？</string>
+    <string name="save">保存</string>
+    <string name="newline_recording">画面レコーダー</string>
+    <string name="tv_quality">品質</string>
+    <string name="tv_system_audio">システムオーディオ</string>
+    <string name="tv_micophone">マイクロフォン</string>
+    <string name="enough_memory">メモリーが充分ではありません</string>
+    <string name="storage_insufficient">記録を開始するには、少なくとも20MBの空きスペースが必要です。</string>
+    <string name="setting_title">設定</string>
+    <string name="mic_option">マイクオプション</string>
+    <string name="Resolution">解像度</string>
+    <string name="built_mic">内蔵マイク</string>
+    <string name="system_auto">システムオーディオ</string>
+    <string name="micAndSystem">マイク＆システムオーディオ</string>
+    <string name="mute">ミュート</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 X720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">メモリから</string>
+    <string name="recording_stop">メモリ上のスペースが足りないため、録音は停止しました。記録を開始するには、少なくとも20MBの空きスペースが必要です。</string>
+    <string name="exit_screen">画面レコーダーを終了しますか？</string>
+    <string name="exit_message">このプラグインを終了したいですか？</string>
+    <string name="exit">終了</string>
+    <string name="save_to">に保存</string>
+    <string name="locality">地域</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">レコードフォルダーを画面に保存します</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <external-cache-path name="external_app_cache" path="./Screen Record" />
+    <external-path name="external_file" path="."/>
+</paths>

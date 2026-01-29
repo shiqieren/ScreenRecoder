@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hht.oemscreenrecoder.widgets.FloatingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/record_tool_floating_padding"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all_page"
+        android:layout_width="844px"
+        android:layout_height="320px"
+        android:background="@drawable/test">
+
+        <ImageView
+            android:id="@+id/imv_icon"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="16px"
+            android:src="@mipmap/ic_recording"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:gravity="top"
+            android:text="@string/newline_recording"
+            android:textColor="#ff949fb4"
+            android:textSize="32px"
+            app:layout_constraintLeft_toRightOf="@+id/imv_icon"
+            app:layout_constraintTop_toTopOf="@id/imv_icon" />
+
+        <ImageView
+            android:id="@+id/imv_close"
+            android:layout_width="13dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="16px"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/ic_recording_tool_close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imv_arrow_down_qua"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginLeft="126px"
+            android:layout_marginTop="36px"
+            android:src="@mipmap/ic_arrow_down"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <TextView
+            android:id="@+id/text_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="38px"
+            android:gravity="top"
+            android:text="@string/tv_quality"
+            android:textColor="#ff96a1b6"
+            android:textSize="22px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <ImageView
+            android:id="@+id/imv_quality"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="88px"
+            android:background="@drawable/record_tool_background_back"
+            android:scaleType="center"
+            android:src="@mipmap/ic_1080_px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="240px"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="80px"
+            android:background="#4c000000"
+            app:layout_constraintLeft_toRightOf="@+id/imv_quality"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_system_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="236px"
+            android:layout_marginTop="40px"
+            android:gravity="top"
+            android:text="@string/tv_system_audio"
+            android:textColor="#ff96a1b6"
+            android:textSize="22px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <ImageView
+            android:id="@+id/imv_system_audio"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="74px"
+            android:layout_marginTop="88px"
+            android:background="@drawable/record_tool_background_back"
+            android:scaleType="center"
+            android:state_selected="true"
+            android:src="@drawable/audio_selector"
+            app:layout_constraintLeft_toRightOf="@id/imv_quality"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <ImageView
+            android:id="@+id/imv_mic_phone"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="72px"
+            android:layout_marginTop="88px"
+            android:background="@drawable/record_tool_background_back"
+            android:scaleType="center"
+            android:src="@drawable/mic_selector"
+            app:layout_constraintLeft_toRightOf="@id/imv_system_audio"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <TextView
+            android:id="@+id/text_mic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82px"
+            android:layout_marginTop="40px"
+            android:gravity="top"
+            android:text="@string/tv_micophone"
+            android:textColor="#ff96a1b6"
+            android:textSize="22px"
+            app:layout_constraintLeft_toRightOf="@id/imv_system_audio"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+
+        <ImageView
+            android:id="@+id/imv_arrow_down_mic"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginLeft="184px"
+            android:layout_marginTop="36px"
+            android:src="@mipmap/ic_arrow_down"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/imv_system_audio"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="240px"
+            android:layout_marginLeft="42px"
+            android:layout_marginTop="80px"
+            android:background="#4c000000"
+            app:layout_constraintLeft_toRightOf="@+id/imv_mic_phone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imv_rec"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="72px"
+            android:src="@mipmap/ic_btn_rec"
+            app:layout_constraintLeft_toRightOf="@id/imv_mic_phone"
+            app:layout_constraintTop_toBottomOf="@id/imv_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.hht.oemscreenrecoder.widgets.FloatingLayout>
+

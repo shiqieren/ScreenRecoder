@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">螢幕錄製</string>
+    <string name="device_not_support_screen_record">抱歉，螢幕錄製應用與您的設備不相容。</string>
+    <string name="permission_denied">螢幕錄製需要授權，否則無法進行螢幕錄製。</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">是否保存螢幕錄製數據？</string>
+    <string name="cancel">取消</string>
+    <string name="ok">確認</string>
+    <string name="low_space_content">您的存儲空間幾乎已滿，您想保存當前數據嗎？</string>
+    <string name="save">保存</string>
+    <string name="newline_recording">螢幕錄製</string>
+    <string name="tv_quality">品質</string>
+    <string name="tv_system_audio">系統音</string>
+    <string name="tv_micophone">麥克風</string>
+    <string name="enough_memory">記憶體不足</string>
+    <string name="storage_insufficient">為了開始螢幕錄製，需要至少20MB的可用空間。</string>
+    <string name="setting_title">設定</string>
+    <string name="mic_option">麥克風選項</string>
+    <string name="Resolution">解析度</string>
+    <string name="built_mic">內置麥克風</string>
+    <string name="system_auto">系統音</string>
+    <string name="micAndSystem">麥克風和系統音</string>
+    <string name="mute">靜音</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">記憶體不足</string>
+    <string name="recording_stop">由於記憶體沒有足夠的空間，螢幕錄製已停止。為了開始螢幕錄製，需要至少20MB的可用空間。</string>
+    <string name="exit_screen">退出螢幕錄製？</string>
+    <string name="exit_message">您確定要退出螢幕錄製嗎？</string>
+    <string name="exit">退出</string>
+    <string name="save_to">儲存到</string>
+    <string name="locality">本地存儲</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">成功保存到螢幕錄製檔夾</string>
+</resources>

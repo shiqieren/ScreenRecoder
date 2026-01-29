@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Gravador de tela</string>
+    <string name="device_not_support_screen_record">Infelizmente, o gravador de tela não é compatível com o seu dispositivo.</string>
+    <string name="permission_denied">É necessário conceder as permissões para o gravador de tela, caso contrário, a tela não poderá ser gravada.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Deseja salvar os dados gravados?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Seu espaço de armazenamento está quase cheio, você deseja salvar os dados atuais?</string>
+    <string name="save">Salvar</string>
+    <string name="newline_recording">Gravador de tela</string>
+    <string name="tv_quality">Qualidade</string>
+    <string name="tv_system_audio">Áudio do sistema</string>
+    <string name="tv_micophone">Microfone</string>
+    <string name="enough_memory">Memória insuficiente</string>
+    <string name="storage_insufficient">Para começar a gravar, é necessário pelo menos 20 MB de espaço livre.</string>
+    <string name="setting_title">Configurações</string>
+    <string name="mic_option">Opção de microfone</string>
+    <string name="Resolution">Resolução</string>
+    <string name="built_mic">Microfone embutido</string>
+    <string name="system_auto">Áudio do sistema</string>
+    <string name="micAndSystem">Áudio de microfone e sistema</string>
+    <string name="mute">Mudo</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Sem memória</string>
+    <string name="recording_stop">A gravação foi interrompida devido ao espaço suficiente na memória. Para começar a gravar, é necessário pelo menos 20 MB de espaço livre.</string>
+    <string name="exit_screen">Desligar o gravador de tela?</string>
+    <string name="exit_message">Tem certeza de que deseja sair deste plugin?</string>
+    <string name="exit">Saída</string>
+    <string name="save_to">Salvar para</string>
+    <string name="locality">Armazenamento local</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Salvar para a pasta de registro de tela</string>
+</resources>

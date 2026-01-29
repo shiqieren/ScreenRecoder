@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Grabador de pantalla</string>
+    <string name="device_not_support_screen_record">Desafortunadamente, la grabadora de pantalla no es compatible con su dispositivo.</string>
+    <string name="permission_denied">Se requiere otorgar los permisos para la grabadora de pantalla, de lo contrario, la pantalla no se puede grabar.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">¿Quieres guardar los datos grabados?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">De acuerdo</string>
+    <string name="low_space_content">Su espacio de almacenamiento está casi lleno, ¿desea guardar los datos actuales?</string>
+    <string name="save">Ahorrar</string>
+    <string name="newline_recording">Grabador de pantalla</string>
+    <string name="tv_quality">Calidad</string>
+    <string name="tv_system_audio">Audio del sistema</string>
+    <string name="tv_micophone">Micrófono</string>
+    <string name="enough_memory">No hay memoria suficiente</string>
+    <string name="storage_insufficient">Para comenzar la grabación, se requiere al menos 20 MB de espacio libre.</string>
+    <string name="setting_title">Ajustes</string>
+    <string name="mic_option">Opción de micrófono</string>
+    <string name="Resolution">Resolució</string>
+    <string name="built_mic">Micrófono incorporado</string>
+    <string name="system_auto">Audio del sistema</string>
+    <string name="micAndSystem">Audio de micrófono y sistema</string>
+    <string name="mute">Mute</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Sin memoria</string>
+    <string name="recording_stop">La grabación se ha detenido debido a que no hay suficiente espacio en la memoria. Para comenzar la grabación, se requiere al menos 20 MB de espacio libre.</string>
+    <string name="exit_screen">Recordadora de pantalla de salida?</string>
+    <string name="exit_message">¿Estás seguro de que quieres salir de este complemento?</string>
+    <string name="exit">Salida</string>
+    <string name="save_to">Guardar en</string>
+    <string name="locality">Localidad</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Guardar en la carpeta de registro de pantalla</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">录屏</string>
+    <string name="device_not_support_screen_record">抱歉，录屏应用与您的设备不兼容。</string>
+    <string name="permission_denied">录屏需要授权，否则无法进行录屏。</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">是否保存录屏数据？</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="low_space_content">您的存储空间几乎已满，您想保存当前数据吗？</string>
+    <string name="save">保存</string>
+    <string name="newline_recording">录屏</string>
+    <string name="tv_quality">品质</string>
+    <string name="tv_system_audio">系统音</string>
+    <string name="tv_micophone">麦克风</string>
+    <string name="enough_memory">内存不足</string>
+    <string name="storage_insufficient">为了开始录屏，需要至少20MB的可用空间。</string>
+    <string name="setting_title">设置</string>
+    <string name="mic_option">麦克风选项</string>
+    <string name="Resolution">分辨率</string>
+    <string name="built_mic">内置麦克风</string>
+    <string name="system_auto">系统音</string>
+    <string name="micAndSystem">麦克风和系统音</string>
+    <string name="mute">静音</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">内存不足</string>
+    <string name="recording_stop">由于内存没有足够的空间，录屏已停止。为了开始录屏，需要至少20MB的可用空间。</string>
+    <string name="exit_screen">退出录屏？</string>
+    <string name="exit_message">您确定要退出录屏吗？</string>
+    <string name="exit">退出</string>
+    <string name="save_to">保存至</string>
+    <string name="locality">本地存储</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">成功保存到录屏文件夹</string>
+    <!-- 录制停止原因提示 -->
+    <string name="stop_reason_time_limit">录制已达到最大时长限制（1小时）。</string>
+    <string name="stop_reason_low_space">由于存储空间不足（少于500MB），录制已停止。</string>
+</resources>

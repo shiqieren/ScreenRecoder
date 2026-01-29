@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Екранний рекордер</string>
+    <string name="device_not_support_screen_record">На жаль, екранний рекордер не сумісний з вашим пристроєм.</string>
+    <string name="permission_denied">Він вимагає надання дозволів на екранний рекордер, інакше екран не може бути записаний.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Ви хочете зберегти записані дані?</string>
+    <string name="cancel">Скасувати</string>
+    <string name="ok">ОК</string>
+    <string name="low_space_content">Ваш місце для зберігання майже повне, ви хочете зберегти поточні дані?</string>
+    <string name="save">зберегти</string>
+    <string name="newline_recording">Екранний рекордер</string>
+    <string name="tv_quality">Якість</string>
+    <string name="tv_system_audio">Системний аудіо</string>
+    <string name="tv_micophone">Мікрофон</string>
+    <string name="enough_memory">Недостатня пам’ять</string>
+    <string name="storage_insufficient">Для початку запису потрібно щонайменше 20 Мб вільного місця.</string>
+    <string name="setting_title">Налаштування</string>
+    <string name="mic_option">Варіант мікрофона</string>
+    <string name="Resolution">роздільна здатність</string>
+    <string name="built_mic">Вбудований мікрофон</string>
+    <string name="system_auto">Системний аудіо</string>
+    <string name="micAndSystem">Мікрофон та системний аудіо</string>
+    <string name="mute">Беззвучний режим</string>
+    <string name="four_definition">3840 X2160</string>
+    <string name="two_definition">1920 X1080</string>
+    <string name="live_definition">1280 X720</string>
+    <string name="high_definition">960 X720</string>
+    <string name="out_of_memory">Недостатньо помяті</string>
+    <string name="recording_stop">Запис був припинений через недостатнє місця на пам\'яті. Для початку запису потрібно щонайменше 20 Мб вільного місця.</string>
+    <string name="exit_screen">Вихід з екрана?</string>
+    <string name="exit_message">Ви впевнені, що хочете вийти з цього плагіна?</string>
+    <string name="exit">Вихід</string>
+    <string name="save_to">Зберегти до</string>
+    <string name="locality">Місцевість</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Збережіть у папці запису екрана</string>
+</resources>

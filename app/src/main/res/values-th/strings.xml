@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-11-10 20:21 >> start-->
+    <string name="app_name">โปรแกรมบันทึกหน้าจอ</string>
+    <string name="device_not_support_screen_record">ขออภัย โปรแกรมบันทึกหน้าจอไม่สามารถใช้งานร่วมกับอุปกรณ์ของคุณได้</string>
+    <string name="permission_denied">จำเป็นต้องให้สิทธิ์สำหรับโปรแกรมบันทึกหน้าจอ มิฉะนั้นจะไม่สามารถบันทึกหน้าจอได้</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">คุณต้องการบันทึกข้อมูลที่บันทึกไว้หรือไม่?</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="ok">ตกลง</string>
+    <string name="low_space_content">พื้นที่เก็บข้อมูลของคุณใกล้เต็มแล้ว คุณต้องการบันทึกข้อมูลปัจจุบันหรือไม่?</string>
+    <string name="save">บันทึก</string>
+    <string name="newline_recording">โปรแกรมบันทึกหน้าจอ</string>
+    <string name="tv_quality">คุณภาพ</string>
+    <string name="tv_system_audio">เสียงระบบ</string>
+    <string name="tv_micophone">ไมโครโฟน</string>
+    <string name="enough_memory">หน่วยความจำไม่เพียงพอ</string>
+    <string name="storage_insufficient">สำหรับการเริ่มบันทึก จำเป็นต้องมีพื้นที่ว่างอย่างน้อย 20MB</string>
+    <string name="setting_title">การตั้งค่า</string>
+    <string name="mic_option">ตัวเลือกไมโครโฟน</string>
+    <string name="Resolution">ความละเอียด</string>
+    <string name="built_mic">ไมโครโฟนในตัว</string>
+    <string name="system_auto">เสียงระบบ</string>
+    <string name="micAndSystem">ไมโครโฟนและเสียงระบบ</string>
+    <string name="mute">ปิดเสียง</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">หน่วยความจำไม่เพียงพอ</string>
+    <string name="recording_stop">การบันทึกถูกหยุดเนื่องจากพื้นที่ว่างในหน่วยความจำไม่เพียงพอ สำหรับการเริ่มบันทึก จำเป็นต้องมีพื้นที่ว่างอย่างน้อย 20MB</string>
+    <string name="exit_screen">ออกจากโปรแกรมบันทึกหน้าจอหรือไม่?</string>
+    <string name="exit_message">คุณแน่ใจหรือไม่ว่าต้องการออกจากปลั๊กอินนี้</string>
+    <string name="exit">ออก</string>
+    <string name="save_to">บันทึกลงใน</string>
+    <string name="locality">ที่จัดเก็บข้อมูลภายในเครื่อง</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">บันทึกลงในโฟลเดอร์บันทึกหน้าจอ</string>
+    <!--2025-11-10 20:21 >> end-->
+</resources>

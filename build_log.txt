@@ -1,0 +1,176 @@
+
+> Configure project :app
+Warning: The 'kotlin-android-extensions' Gradle plugin is deprecated. Please use this migration guide (https://goo.gle/kotlin-android-extensions-deprecation) to start working with View Binding (https://developer.android.com/topic/libraries/view-binding) and the 'kotlin-parcelize' plugin.
+WARNING:The specified Android SDK Build Tools version (30.0.2) is ignored, as it is below the minimum supported version (30.0.3) for Android Gradle Plugin 7.1.3.
+Android SDK Build Tools 30.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '30.0.2'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :app:buildKotlinToolingMetadata
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preA24ReleaseBuild UP-TO-DATE
+> Task :app:compileA24ReleaseAidl NO-SOURCE
+> Task :app:compileA24ReleaseRenderscript NO-SOURCE
+> Task :app:generateA24ReleaseBuildConfig
+> Task :app:generateA24ReleaseResValues
+> Task :app:generateA24ReleaseResources
+> Task :app:checkA24ReleaseAarMetadata
+> Task :app:createA24ReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksA24Release
+> Task :app:processA24ReleaseMainManifest
+> Task :app:mergeA24ReleaseResources
+> Task :app:processA24ReleaseManifest
+> Task :app:javaPreCompileA24Release
+> Task :app:extractProguardFiles
+> Task :app:mergeA24ReleaseJniLibFolders
+> Task :app:mergeA24ReleaseNativeLibs NO-SOURCE
+> Task :app:stripA24ReleaseDebugSymbols NO-SOURCE
+> Task :app:extractA24ReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeA24ReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeA24ReleaseArtProfile UP-TO-DATE
+> Task :app:processA24ReleaseManifestForPackage
+> Task :app:checkA24ReleaseDuplicateClasses
+> Task :app:mergeA24ReleaseShaders
+> Task :app:compileA24ReleaseShaders NO-SOURCE
+> Task :app:generateA24ReleaseAssets UP-TO-DATE
+> Task :app:mergeA24ReleaseAssets
+> Task :app:compressA24ReleaseAssets
+> Task :app:processA24ReleaseJavaRes NO-SOURCE
+> Task :app:collectA24ReleaseDependencies
+> Task :app:sdkA24ReleaseDependencyData
+> Task :app:validateSigningA24Release
+> Task :app:writeA24ReleaseAppMetadata
+> Task :app:writeA24ReleaseSigningConfigVersions
+> Task :app:processA24ReleaseResources
+
+> Task :app:desugarA24ReleaseFileDependencies
+WARNING:D:\.gradle\caches\transforms-3\b92b57484f39a85380bf54333e8a538c\transformed\jetified-classes.jar: D8: One or more classes has class file version >= 56 which is not officially supported.
+
+> Task :app:compileA24ReleaseKotlin
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (85, 57): 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (85, 101): 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (87, 36): 'setSystemUiVisibility(Int): Unit' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (87, 63): 'SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (289, 36): Type mismatch: inferred type is String? but String was expected
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (345, 13): Name shadowed: path
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (351, 38): Unsafe use of a nullable receiver of type Array<(out) File!>?
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (351, 68): Unsafe use of a nullable receiver of type Array<(out) File!>?
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (352, 28): Unsafe use of a nullable receiver of type Array<(out) File!>?
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (404, 71): Unchecked cast: Any! to Array<Any>
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (405, 17): Condition 'volumeList != null' is always 'true'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (444, 13): Condition 'receiverU != null' is always 'true'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (480, 25): Condition 'null != items' is always 'true'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (484, 29): Condition 'path != null' is always 'true'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (501, 13): Condition 'manager != null' is always 'true'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\MainActivity.kt: (502, 37): 'getRunningServices(Int): (Mutable)List<ActivityManager.RunningServiceInfo!>!' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (230, 34): Unnecessary safe call on a non-null receiver of type RadioGroup. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (266, 13): Variable 'filter' is never used
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (276, 36): Unnecessary safe call on a non-null receiver of type Intent?. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (277, 29): Unnecessary safe call on a non-null receiver of type Intent?. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (291, 49): Unnecessary safe call on a non-null receiver of type MediaProjectionManager. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (341, 17): Variable 'isUsbMic' is assigned but never accessed
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (345, 21): The value 'true' assigned to 'var isUsbMic: Boolean defined in com.hht.oemscreenrecoder.screenrecorder.ScreenRecordService.onStartCommand' is never used
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (391, 25): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (392, 20): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (393, 21): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (398, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (399, 20): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (410, 20): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (411, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (414, 29): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (415, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (448, 20): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (449, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (450, 22): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (452, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (453, 25): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (455, 29): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (496, 25): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (497, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (500, 31): Unnecessary safe call on a non-null receiver of type ScreenRecordHelper. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (505, 25): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (506, 24): Unnecessary safe call on a non-null receiver of type Button. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (507, 31): Unnecessary safe call on a non-null receiver of type ScreenRecordHelper. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (584, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (588, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (614, 36): 'constructor Builder(Context!)' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (631, 22): 'defaults: Int' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (993, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (994, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (995, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (996, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (998, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (999, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1000, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1001, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1003, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1004, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1005, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1006, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1008, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1009, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1010, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1011, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1016, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1017, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1018, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1019, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1028, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1029, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1030, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1031, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1040, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1041, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1042, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1043, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1052, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1053, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1054, 25): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1055, 22): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1095, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1096, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1097, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1099, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1100, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1101, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1103, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1104, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1105, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1109, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1110, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1111, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1119, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1120, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1121, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1129, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1130, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1131, 29): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1214, 17): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1243, 21): Unnecessary safe call on a non-null receiver of type ImageView. This expression will have nullable type in future releases
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1246, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1267, 17): 'constructor Handler()' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecordService.kt: (1282, 13): Condition 'resId == null' is always 'false'
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecorderHelper.kt: (84, 13): 'setter for view: View?' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecorderHelper.kt: (249, 38): 'getSize(Point!): Unit' is deprecated. Deprecated in Java
+w: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\screenrecorder\ScreenRecorderHelper.kt: (372, 78): 'toLowerCase(Locale): String' is deprecated. Use lowercase() instead.
+
+> Task :app:compileA24ReleaseJavaWithJavac
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: D:\gerrit_workspace\oem-screenRecordbk\screen-recorder-oem\app\src\main\java\com\hht\oemscreenrecoder\widgets\ViewHolder.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+
+> Task :app:dexBuilderA24Release
+> Task :app:optimizeA24ReleaseResources
+> Task :app:mergeA24ReleaseJavaResource
+> Task :app:mergeExtDexA24Release
+> Task :app:mergeDexA24Release
+> Task :app:compileA24ReleaseArtProfile
+> Task :app:packageA24Release
+> Task :app:createA24ReleaseApkListingFileRedirect
+> Task :app:lintVitalAnalyzeA24Release
+> Task :app:lintVitalReportA24Release
+> Task :app:lintVitalA24Release
+> Task :app:assembleA24Release
+
+BUILD SUCCESSFUL in 1m 7s
+38 actionable tasks: 37 executed, 1 up-to-date

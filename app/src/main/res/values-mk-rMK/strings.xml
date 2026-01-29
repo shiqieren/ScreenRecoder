@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">ScreenRecorder</string>
+    <string name="device_not_support_screen_record">За жал, снимањето на нови линии не е компатибилно со вашиот уред.</string>
+    <string name="permission_denied">Потребно е да се дадат дозволи за снимање на ново линија, во спротивно екранот не може да се евидентира.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Дали сакате да ги зачувате снимените податоци?</string>
+    <string name="cancel">Откажи</string>
+    <string name="low_space_content">Вашиот простор за складирање е скоро полн, дали сакате да ги зачувате тековните податоци?</string>
+    <string name="save">Зачувај</string>
+    <string name="newline_recording">Снимање на нови линии</string>
+    <string name="tv_quality">Квалитет</string>
+    <string name="tv_system_audio">Системско аудио</string>
+    <string name="tv_micophone">Микрофон</string>
+</resources>

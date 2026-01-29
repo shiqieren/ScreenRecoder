@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.hht.oemscreenrecoder",
+  "variantName": "a24Release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 251030,
+      "versionName": "1.25.4_202510301159",
+      "outputFile": "ScreenRecoder_1.25.4_202510301159_a24.apk"
+    }
+  ],
+  "elementType": "File"
+}

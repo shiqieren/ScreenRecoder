@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-11-10 20:21 >> start-->
+    <string name="app_name">Trình ghi màn hình</string>
+    <string name="device_not_support_screen_record">Rất tiếc, Trình ghi màn hình không tương thích với thiết bị của bạn.</string>
+    <string name="permission_denied">Yêu cầu cấp quyền cho Trình ghi màn hình, nếu không, màn hình sẽ không thể được ghi lại.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Bạn có muốn lưu dữ liệu đã ghi không?</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Dung lượng lưu trữ của bạn sắp đầy, bạn có muốn lưu dữ liệu hiện tại không?</string>
+    <string name="save">Lưu</string>
+    <string name="newline_recording">Trình ghi màn hình</string>
+    <string name="tv_quality">Chất lượng</string>
+    <string name="tv_system_audio">Âm thanh hệ thống</string>
+    <string name="tv_micophone">Micrô</string>
+    <string name="enough_memory">Không đủ bộ nhớ</string>
+    <string name="storage_insufficient">Để bắt đầu ghi, cần ít nhất 20MB dung lượng trống.</string>
+    <string name="setting_title">Cài đặt</string>
+    <string name="mic_option">Tùy chọn micrô</string>
+    <string name="Resolution">Độ phân giải</string>
+    <string name="built_mic">Micrô tích hợp</string>
+    <string name="system_auto">Âm thanh hệ thống</string>
+    <string name="micAndSystem">Micrô &amp; Âm thanh hệ thống</string>
+    <string name="mute">Tắt tiếng</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Hết bộ nhớ</string>
+    <string name="recording_stop">Quá trình ghi đã bị dừng do không đủ dung lượng bộ nhớ. Để bắt đầu ghi, cần ít nhất 20MB dung lượng trống.</string>
+    <string name="exit_screen">Thoát Trình ghi màn hình?</string>
+    <string name="exit">Bạn có chắc chắn muốn thoát khỏi plugin này không?</string>
+    <string name="save_to">Thoát</string>
+    <string name="locality">Lưu vào</string>
+    <string name="axue_usb">Bộ nhớ cục bộ</string>
+    <string name="save_success">USB %1$s</string>
+    <!--2025-11-10 20:21 >> end-->
+</resources>

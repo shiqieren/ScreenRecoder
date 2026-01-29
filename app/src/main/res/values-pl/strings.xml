@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Rejestrator ekranu</string>
+    <string name="device_not_support_screen_record">Niestety, Rejestrator ekranu nie jest kompatybilny z Twoim urządzeniem.</string>
+    <string name="permission_denied">Wymagane jest udzielenie uprawnień dla Rejestratora ekranu, w przeciwnym razie ekran nie może być nagrywany.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Czy chcesz zapisać nagrane dane?</string>
+    <string name="cancel">Anuluj</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Twoja przestrzeń dyskowa jest prawie pełna. Czy chcesz zapisać bieżące dane?</string>
+    <string name="save">Zapisz</string>
+    <string name="newline_recording">Rejestrator ekranu</string>
+    <string name="tv_quality">Jakość</string>
+    <string name="tv_system_audio">Dźwięk systemowy</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Za mało pamięci</string>
+    <string name="storage_insufficient">Do rozpoczęcia nagrywania wymagane jest co najmniej 20 MB wolnej przestrzeni.</string>
+    <string name="setting_title">Ustawienia</string>
+    <string name="mic_option">Opcja mikrofonu</string>
+    <string name="Resolution">Rozdzielczość</string>
+    <string name="built_mic">Wbudowany mikrofon</string>
+    <string name="system_auto">Dźwięk systemowy</string>
+    <string name="micAndSystem">Mikrofon i dźwięk systemowy</string>
+    <string name="mute">Wycisz</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Brak pamięci</string>
+    <string name="recording_stop">Nagrywanie zostało zatrzymane z powodu braku miejsca w pamięci. Do rozpoczęcia nagrywania wymagane jest co najmniej 20 MB wolnej przestrzeni.</string>
+    <string name="exit_screen">Czy chcesz opuścić Rejestrator ekranu?</string>
+    <string name="exit_message">Czy na pewno chcesz zamknąć tę wtyczkę?</string>
+    <string name="exit">Wyjście</string>
+    <string name="save_to">Zapisz w</string>
+    <string name="locality">Pamięć lokalna</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Zapisz w folderze nagrań ekranu</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

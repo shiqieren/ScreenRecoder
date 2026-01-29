@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Nagrywarka ekranu</string>
+    <string name="device_not_support_screen_record">Niestety rejestrator ekranu nie jest kompatybilny z urządzeniem.</string>
+    <string name="permission_denied">Wymaga udzielenia uprawnień do rejestratora ekranu, w przeciwnym razie ekranu nie można zarejestrować.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Czy chcesz zapisać zarejestrowane dane?</string>
+    <string name="cancel">anulować</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Twoja przestrzeń do przechowywania jest prawie pełna, czy chcesz zapisać bieżące dane?</string>
+    <string name="save">Zapisać</string>
+    <string name="newline_recording">Nagrywarka ekranu</string>
+    <string name="tv_quality">Jakość</string>
+    <string name="tv_system_audio">Audio systemowe</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Za mało pamięci</string>
+    <string name="storage_insufficient">Do rozpoczęcia nagrywania wymagane jest co najmniej 20 MB wolne miejsce.</string>
+    <string name="setting_title">Ustawienia</string>
+    <string name="mic_option">Opcja mikrofonu</string>
+    <string name="Resolution">Rozdzielczość</string>
+    <string name="built_mic">Wbudowany mikrofon</string>
+    <string name="system_auto">Audio systemowe</string>
+    <string name="micAndSystem">Audio mikrofonowe i systemowe</string>
+    <string name="mute">Wyciszenie</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Brak pamięci</string>
+    <string name="recording_stop">Nagrywanie zostało zatrzymane z powodu niewystarczającej ilości miejsca na pamięci. Do rozpoczęcia nagrywania wymagane jest co najmniej 20 MB wolne miejsce.</string>
+    <string name="exit_screen">Rejestrator ekranu wyjścia?</string>
+    <string name="exit_message">Czy na pewno chcesz wyjść z tej wtyczki?</string>
+    <string name="exit">Wyjście</string>
+    <string name="save_to">Zapisz do</string>
+    <string name="locality">Miejscowość</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Zapisz w folderze rekordu ekranu</string>
+</resources>

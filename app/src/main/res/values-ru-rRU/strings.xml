@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Экран регистратор</string>
+    <string name="device_not_support_screen_record">К сожалению, экран регистратор не совместим с вашим устройством.</string>
+    <string name="permission_denied">Требуется предоставить разрешения на экран регистратор, в противном случае экран не может быть записан.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Вы хотите сохранить записанные данные?</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Хорошо</string>
+    <string name="low_space_content">Ваше место для хранения почти заполнено, хотите ли вы сохранить текущие данные?</string>
+    <string name="save">Сохранять</string>
+    <string name="newline_recording">Экран регистратор</string>
+    <string name="tv_quality">Качество</string>
+    <string name="tv_system_audio">Системный аудио</string>
+    <string name="tv_micophone">Микрофон</string>
+    <string name="enough_memory">Недостаточно памяти</string>
+    <string name="storage_insufficient">Для начала записи требуется не менее 20 МБ свободное место.</string>
+    <string name="setting_title">Настройки</string>
+    <string name="mic_option">Опция микрофона</string>
+    <string name="Resolution">Разрешение</string>
+    <string name="built_mic">Встроенный микрофон</string>
+    <string name="system_auto">Системный аудио</string>
+    <string name="micAndSystem">Микрофон и системный аудио</string>
+    <string name="mute">Без звука</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Недостаточно памяти</string>
+    <string name="recording_stop">Запись была остановлена ​​из -за недостаточно места на памяти. Для начала записи требуется не менее 20 МБ свободное место.</string>
+    <string name="exit_screen">Выход экран регистратор?</string>
+    <string name="exit_message">Вы уверены, что хотите выйти из этого плагина?</string>
+    <string name="exit">Выход</string>
+    <string name="save_to">Сохранить в</string>
+    <string name="locality">Местонахождение</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Сохранить в папке записи экрана</string>
+</resources>

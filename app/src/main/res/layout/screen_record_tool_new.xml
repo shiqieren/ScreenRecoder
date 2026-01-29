@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hht.oemscreenrecoder.widgets.FloatingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="588px"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/record_tool_floating_padding"
+    android:background="@drawable/screen_recorder_bg"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/ic_movable"
+        android:layout_width="20px"
+        android:layout_height="29px"
+        android:layout_marginLeft="28px"
+        android:background="@drawable/ic_movable"
+        android:contentDescription="@string/fold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toRightOf="@+id/ic_movable">
+
+        <RelativeLayout
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="52px"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="20px"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:id="@+id/ic_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:contentDescription="@string/start_recoder"
+                android:background="@drawable/start_icon_copy" />
+
+            <Button
+                android:id="@+id/ic_unstart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/start_icon"/>
+
+            <Button
+                android:id="@+id/ic_recorder_stop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:contentDescription="@string/stop_recoder"
+                android:background="@drawable/recorder_start_selector"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="34px"
+            android:layout_marginTop="30px"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:id="@+id/ic_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:contentDescription="@string/setting_title"
+                android:background="@drawable/settings_icon"/>
+
+            <Button
+                android:id="@+id/recorder_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/recorder_again"
+                android:visibility="gone"
+                android:background="@drawable/recorder_again_selector"/>
+
+            <Button
+                android:id="@+id/ic_suspend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:contentDescription="@string/suspend"
+                android:background="@drawable/recorder_continue_selector"/>
+
+            <Button
+                android:id="@+id/ic_continue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:contentDescription="@string/str_continue"
+                android:background="@drawable/recorder_continue_exit_selector"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginRight="34px"
+            android:layout_marginLeft="34px"
+            android:layout_marginTop="30px"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:id="@+id/ic_recorder_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:contentDescription="@string/exit"
+                android:background="@drawable/btn_recorder_exit"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/record_time"
+            android:layout_width="287px"
+            android:layout_height="70px"
+            android:layout_marginLeft="130px"
+            android:textSize="48px"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:text=" 00 : 00 : 00 "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear"/>
+
+</com.hht.oemscreenrecoder.widgets.FloatingLayout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Skærmoptager</string>
+    <string name="device_not_support_screen_record">Desværre er skærmoptager ikke kompatibel med din enhed.</string>
+    <string name="permission_denied">Det kræver at give tilladelserne til skærmoptager, ellers kan skærmen ikke registreres.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Vil du gemme de registrerede data?</string>
+    <string name="cancel">Afbestille</string>
+    <string name="ok">Okay</string>
+    <string name="low_space_content">Din lagerplads er næsten fuld, vil du gemme de aktuelle data?</string>
+    <string name="save">Gemme</string>
+    <string name="newline_recording">Skærmoptager</string>
+    <string name="tv_quality">Kvalitet</string>
+    <string name="tv_system_audio">Systemlyd</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Ikke nok hukommelse</string>
+    <string name="storage_insufficient">Til startoptagelse kræves mindst 20 MB gratis plads.</string>
+    <string name="setting_title">Indstillinger</string>
+    <string name="mic_option">Indstillingen Mikrofon</string>
+    <string name="Resolution">Opløsning</string>
+    <string name="built_mic">Indbygget mikrofon</string>
+    <string name="system_auto">Systemlyd</string>
+    <string name="micAndSystem">Mikrofon &amp; systemlyd</string>
+    <string name="mute">Lydløs</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Ikke mere hukommelse</string>
+    <string name="recording_stop">Optagelsen er stoppet på grund af ikke nok plads på hukommelsen. Til startoptagelse kræves mindst 20 MB gratis plads.</string>
+    <string name="exit_screen">Afslut skærmoptager?</string>
+    <string name="exit_message">Er du sikker på, at du vil afslutte dette plugin?</string>
+    <string name="exit">Afslut</string>
+    <string name="save_to">Gem i</string>
+    <string name="locality">Lokalitet</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Gem til skærmrekordmappe</string>
+</resources>

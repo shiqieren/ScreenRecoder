@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hht.oemscreenrecoder.widgets.FloatingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/retract_bg"
+    android:padding="@dimen/record_tool_floating_padding"
+    android:layout_width="182px"
+    android:layout_height="182px"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_id"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/white_imap_id"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@drawable/white"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/red_imap_id"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@drawable/red"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/blue_imap_id"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@drawable/blue"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rec_id"
+        android:layout_width="wrap_content"
+        android:layout_height="62px"
+        android:text="REC"
+        android:textSize="48px"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="18px"
+        android:paddingRight="24px"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@+id/rel_id"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/record_time"
+        app:layout_constraintTop_toBottomOf="@+id/rec_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="28px"
+        android:layout_marginLeft="28px"
+        android:layout_width="119px"
+        android:textSize="24px"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="8px"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+
+</com.hht.oemscreenrecoder.widgets.FloatingLayout>

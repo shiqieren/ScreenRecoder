@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Scherm opnemer</string>
+    <string name="device_not_support_screen_record">Helaas is de schermrecorder niet compatibel met uw apparaat.</string>
+    <string name="permission_denied">Het vereist om de machtigingen voor de schermrecorder te verlenen, anders kan het scherm niet worden opgenomen.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Wilt u de opgenomen gegevens opslaan?</string>
+    <string name="cancel">Annuleren</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Uw opslagruimte is bijna vol, wilt u de huidige gegevens opslaan?</string>
+    <string name="save">Sparen</string>
+    <string name="newline_recording">Scherm opnemer</string>
+    <string name="tv_quality">Kwaliteit</string>
+    <string name="tv_system_audio">Systeemaudio</string>
+    <string name="tv_micophone">Microfoon</string>
+    <string name="enough_memory">Niet genoeg geheugen</string>
+    <string name="storage_insufficient">Voor het begin van het begin is minimaal 20 MB vrije ruimte vereist.</string>
+    <string name="setting_title">Instellingen</string>
+    <string name="mic_option">Microfoonoptie</string>
+    <string name="Resolution">Resolutie</string>
+    <string name="built_mic">Ingebouwde microfoon</string>
+    <string name="system_auto">Systeemaudio</string>
+    <string name="micAndSystem">Microfoon- en systeemaudio</string>
+    <string name="mute">Dempen</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Uit het geheugen</string>
+    <string name="recording_stop">De opname is gestopt vanwege niet genoeg ruimte op het geheugen. Voor het begin van het begin is minimaal 20 MB vrije ruimte vereist.</string>
+    <string name="exit_screen">Verlaat de schermrecorder?</string>
+    <string name="exit_message">Weet u zeker dat u deze plug -in wilt verlaten?</string>
+    <string name="exit">Verlaat</string>
+    <string name="save_to">Opslaan in</string>
+    <string name="locality">Plaats</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Opslaan op de map Screen Record</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File convert_encoding.ps1)",
+      "Bash(./gradlew clean build:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File remove_bom.ps1)",
+      "Bash(./gradlew build:*)",
+      "Bash(./gradlew --version)",
+      "Bash(./gradlew:*)",
+      "Bash(Select-String -Pattern \"BUILD|FAILED|error:|Error:\")",
+      "Bash(Select-Object -Last 20)",
+      "Bash(tee:*)",
+      "Bash(cat:*)",
+      "Bash(java:*)",
+      "Bash(timeout 120 ./gradlew:*)",
+      "Bash(timeout 180 ./gradlew clean build)",
+      "Bash(timeout 180 ./gradlew:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(where /r . Utils.java)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

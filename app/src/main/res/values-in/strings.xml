@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-11-10 20:21 >> start-->
+    <string name="app_name">Perekam Layar</string>
+    <string name="device_not_support_screen_record">Sayangnya, Perekam Layar tidak kompatibel dengan perangkat Anda.</string>
+    <string name="permission_denied">Diperlukan izin untuk Perekam Layar, jika tidak, layar tidak dapat direkam.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Ingin menyimpan data yang direkam?</string>
+    <string name="cancel">Batal</string>
+    <string name="ok">Oke</string>
+    <string name="low_space_content">Ruang penyimpanan Anda hampir penuh, ingin menyimpan data saat ini?</string>
+    <string name="save">Simpan</string>
+    <string name="newline_recording">Perekam Layar</string>
+    <string name="tv_quality">Kualitas</string>
+    <string name="tv_system_audio">Audio Sistem</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Memori tidak cukup</string>
+    <string name="storage_insufficient">Untuk memulai perekaman, diperlukan ruang kosong minimal 20MB.</string>
+    <string name="setting_title">Pengaturan</string>
+    <string name="mic_option">Opsi Mikrofon</string>
+    <string name="Resolution">Resolusi</string>
+    <string name="built_mic">Mikrofon internal</string>
+    <string name="system_auto">Audio Sistem</string>
+    <string name="micAndSystem">Mikrofon &amp; Audio Sistem</string>
+    <string name="mute">Bisu</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Kehabisan memori</string>
+    <string name="recording_stop">Rekaman telah dihentikan karena tidak cukup ruang di memori. Untuk memulai perekaman, diperlukan ruang kosong minimal 20MB.</string>
+    <string name="exit_screen">Keluar dari Perekam Layar?</string>
+    <string name="exit_message">Yakin ingin keluar dari plugin ini?</string>
+    <string name="exit">Keluar</string>
+    <string name="save_to">Simpan ke</string>
+    <string name="locality">Penyimpanan Lokal</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Simpan ke folder rekaman layar</string>
+    <!--2025-11-10 20:21 >> end-->
+</resources>

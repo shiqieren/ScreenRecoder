@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Ekrano įrašymo įrenginys</string>
+    <string name="device_not_support_screen_record">Deja, ekrano įrašymo programa nesuderinama su jūsų įrenginiu.</string>
+    <string name="permission_denied">Reikia suteikti ekrano įrašymo įrenginio leidimus, kitaip ekrano vaizdo įrašyti nebus galima.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Ar norite išsaugoti įrašytus duomenis?</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="ok">Gerai</string>
+    <string name="low_space_content">Jūsų saugyklos vieta beveik pilna, ar norite išsaugoti esamus duomenis?</string>
+    <string name="save">Išsaugoti</string>
+    <string name="newline_recording">Ekrano įrašymo įrenginys</string>
+    <string name="tv_quality">Kokybė</string>
+    <string name="tv_system_audio">Sistemos garsas</string>
+    <string name="tv_micophone">Mikrofonas</string>
+    <string name="enough_memory">Nepakanka atminties</string>
+    <string name="storage_insufficient">Norint pradėti įrašymą, reikia bent 20 MB laisvos vietos.</string>
+    <string name="setting_title">Nustatymai</string>
+    <string name="mic_option">Mikrofono parinktis</string>
+    <string name="Resolution">Rezoliucija</string>
+    <string name="built_mic">Integruotas mikrofonas</string>
+    <string name="system_auto">Sistemos garsas</string>
+    <string name="micAndSystem">Mikrofonas ir sistemos garsas</string>
+    <string name="mute">Nutildyti</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Nepakanka atminties</string>
+    <string name="recording_stop">Įrašymas sustabdytas, nes nepakanka vietos atmintyje. Norint pradėti įrašymą, reikia bent 20 MB laisvos vietos.</string>
+    <string name="exit_screen">Išeiti iš ekrano įrašymo įrenginio?</string>
+    <string name="exit_message">Ar tikrai norite išeiti iš šio papildinio?</string>
+    <string name="exit">Išeiti</string>
+    <string name="save_to">Išsaugoti</string>
+    <string name="locality">Vietinė saugykla</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Įrašyti į ekrano įrašų aplanką</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

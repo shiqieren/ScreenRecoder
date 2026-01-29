@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Запис на екран</string>
+    <string name="device_not_support_screen_record">За съжаление, Screen Recorder не е съвместим с вашето устройство.</string>
+    <string name="permission_denied">Изисква се да предоставите разрешения за Screen Recorder, в противен случай екранът не може да бъде записан.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Искате ли да запазите записаните данни?</string>
+    <string name="cancel">Отказ</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Вашето място за съхранение е почти пълно, искате ли да запазите текущите данни?</string>
+    <string name="save">Запазване</string>
+    <string name="newline_recording">Screen Recorder</string>
+    <string name="tv_quality">Качество</string>
+    <string name="tv_system_audio">Системно аудио</string>
+    <string name="tv_micophone">Микрофон</string>
+    <string name="enough_memory">Няма достатъчно памет</string>
+    <string name="storage_insufficient">За да започнете запис, са необходими поне 20MB свободно място.</string>
+    <string name="setting_title">Настройки</string>
+    <string name="mic_option">Опция за микрофон</string>
+    <string name="Resolution">Резолюция</string>
+    <string name="built_mic">Вграден микрофон</string>
+    <string name="system_auto">Системно аудио</string>
+    <string name="micAndSystem">Микрофон и системно аудио</string>
+    <string name="mute">Без звук</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Няма памет</string>
+    <string name="recording_stop">Записът е спрян поради недостатъчно място в паметта. За да започнете запис, са необходими поне 20MB свободно място.</string>
+    <string name="exit_screen">Изход от Screen Recorder?</string>
+    <string name="exit_message">Наистина ли искате да излезете от този плъгин?</string>
+    <string name="exit">Изход</string>
+    <string name="save_to">Запазване в</string>
+    <string name="locality">Локално хранилище</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Запазване в папка за записи на екрана</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Snimač ekrana</string>
+    <string name="device_not_support_screen_record">Nažalost, Snimač ekrana nije kompatibilan s vašim uređajem.</string>
+    <string name="permission_denied">Potrebno je dati dozvole za snimanje ekrana, u suprotnom ekran ne može biti snimljen.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Želite li sačuvati snimljene podatke?</string>
+    <string name="cancel">Otkaži</string>
+    <string name="ok">U redu</string>
+    <string name="low_space_content">Vaš prostor za pohranu je gotovo pun, želite li sačuvati trenutne podatke?</string>
+    <string name="save">Sačuvaj</string>
+    <string name="newline_recording">Snimač ekrana</string>
+    <string name="tv_quality">Kvalitet</string>
+    <string name="tv_system_audio">Sistemski zvuk</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Nema dovoljno memorije</string>
+    <string name="storage_insufficient">Za početak snimanja potrebno je najmanje 20 MB slobodnog prostora.</string>
+    <string name="setting_title">Postavke</string>
+    <string name="mic_option">Opcija mikrofona</string>
+    <string name="Resolution">Rezolucija</string>
+    <string name="built_mic">Ugrađeni mikrofon</string>
+    <string name="system_auto">Sistemski zvuk</string>
+    <string name="micAndSystem">Mikrofon i sistemski zvuk</string>
+    <string name="mute">Isključi zvuk</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280x720</string>
+    <string name="high_definition">960x720</string>
+    <string name="out_of_memory">Nema dovoljno memorije</string>
+    <string name="recording_stop">Snimanje je zaustavljeno zbog nedovoljno prostora u memoriji. Za početak snimanja potrebno je najmanje 20 MB slobodnog prostora.</string>
+    <string name="exit_screen">Izlaz iz Snimanja ekrana?</string>
+    <string name="exit_message">Jeste li sigurni da želite izaći iz ovog dodatka?</string>
+    <string name="exit">Izlaz</string>
+    <string name="save_to">Sačuvaj u</string>
+    <string name="locality">Lokalna pohrana</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Sačuvaj u mapu sa snimcima ekrana</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

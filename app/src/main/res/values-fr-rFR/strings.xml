@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Enregistreur d\'écran</string>
+    <string name="device_not_support_screen_record">Malheureusement, l\'enregistreur d\'écran n\'est pas compatible avec votre appareil.</string>
+    <string name="permission_denied">Il faut accorder les autorisations pour l\'enregistreur d\'écran, sinon l\'écran ne peut pas être enregistré.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Voulez-vous enregistrer les données enregistrées?</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">D\'accord</string>
+    <string name="low_space_content">Votre espace de stockage est presque plein, voulez-vous enregistrer les données actuelles?</string>
+    <string name="save">Sauver</string>
+    <string name="newline_recording">Enregistreur d\'écran</string>
+    <string name="tv_quality">Qualité</string>
+    <string name="tv_system_audio">Audio système</string>
+    <string name="tv_micophone">Microphone</string>
+    <string name="enough_memory">Pas assez de mémoire</string>
+    <string name="storage_insufficient">Pour le début de l\'enregistrement, un espace libre d\'au moins 20 Mo est requis.</string>
+    <string name="setting_title">Réglages</string>
+    <string name="mic_option">Option de microphone</string>
+    <string name="Resolution">Résolution</string>
+    <string name="built_mic">Microphone intégré</string>
+    <string name="system_auto">Audio système</string>
+    <string name="micAndSystem">Audio microphone et système</string>
+    <string name="mute">Muet</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Mémoire insuffisante</string>
+    <string name="recording_stop">L\'enregistrement a été arrêté en raison de l\'espace pas assez de mémoire. Pour le début de l\'enregistrement, un espace libre d\'au moins 20 Mo est requis.</string>
+    <string name="exit_screen">Enregistreur d\'écran de sortie?</string>
+    <string name="exit_message">Êtes-vous sûr de souhaiter quitter ce plugin?</string>
+    <string name="exit">Sortie</string>
+    <string name="save_to">Enregistrer sous</string>
+    <string name="locality">Localité</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Enregistrer dans le dossier d\'enregistrement d\'écran</string>
+</resources>

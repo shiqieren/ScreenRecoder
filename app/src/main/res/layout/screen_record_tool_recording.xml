@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hht.oemscreenrecoder.widgets.FloatingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/record_tool_floating_padding"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/record_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_page"
+        android:background="@drawable/record_background_q"
+        android:layout_width="360px"
+        android:layout_height="128px">
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/btn_recording_enable"
+            android:scaleType="centerInside"
+            android:id="@+id/imv_recording"
+            android:layout_marginLeft="32px"
+            android:layout_width="72px"
+            android:layout_height="72px"/>
+        
+        <TextView
+            android:id="@+id/record_time"
+            app:layout_constraintLeft_toRightOf="@id/imv_recording"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="24px"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff2f4f8"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:layout_height="50px"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.hht.oemscreenrecoder.widgets.FloatingLayout>
+

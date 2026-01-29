@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="dialog_background">#99000000</color>
+    <color name="button_background_selected_color">#dce3eb</color>
+    <color name="button_disable_color">#bcbcbc</color>
+    <color name="hitevision_blue">#1f86eb</color>
+    <color name="button_normal_color">#6a6a6a</color>
+    <color name="button_pressed_color">#5A5A5A</color>
+    <color name="record_tool_playing">#e4002b</color>
+    <color name="record_tool_pause">#f2a900</color>
+    <color name="color_focus">#F2A900</color>
+    <color name="menu_background_color">#415284</color>
+    <color name="menu_background_border_color">#93A9C9</color>
+    <color name="setting_list_selected_color">#3371C5E8</color>
+    <color name="checkbox_ripple_pressed">#5971C5E8</color>
+    <color name="checkbox_ripple_normal">#59FFFFFF</color>
+    <color name="toast_background">#71C5E8</color>
+    <color name="setting_title_color">#434343</color>
+    <color name="mic_text_colot">#333</color>
+    <color name="exit_color">#cd4848</color>
+    <color name="button_border_bg">#DDDDDD</color>
+
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="802px"
+    android:layout_height="424px"
+    android:background="@drawable/save_bg">
+
+    <TextView
+        android:id="@+id/save_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="@string/save_to"
+        android:textColor="@color/setting_title_color"
+        android:gravity="center_vertical"
+        android:paddingTop="20px"
+        android:layout_marginLeft="42px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/stop_reason_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:textColor="#FF6B00"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:paddingBottom="15px"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_title"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="#dce3eb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop_reason_hint"/>
+
+    <ImageView
+        android:id="@+id/imv_save"
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="34px"
+        android:layout_marginRight="40px"
+        android:src="@drawable/put_away"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usb_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/line">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/local_rel"-->
+<!--            android:layout_width="176px"-->
+<!--            android:layout_height="200px"-->
+<!--            android:layout_marginTop="38px"-->
+<!--            android:layout_marginLeft="64px"-->
+<!--            android:background="@drawable/rel_layout_bg">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/local_img"-->
+<!--                android:layout_width="80px"-->
+<!--                android:layout_height="80px"-->
+<!--                android:src="@drawable/local_file"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/local_progressBar"-->
+<!--                android:layout_width="48px"-->
+<!--                android:layout_height="48px"-->
+<!--                android:indeterminate="true"-->
+<!--                android:visibility="gone"-->
+<!--                android:indeterminateDrawable="@drawable/progressbar"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="48px"-->
+<!--                android:text="@string/locality"-->
+<!--                android:textSize="28px"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="@color/setting_title_color"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                android:layout_marginBottom="17px"/>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/usb1_rel"-->
+<!--            android:layout_width="176px"-->
+<!--            android:layout_height="200px"-->
+<!--            android:layout_marginTop="38px"-->
+<!--            android:layout_marginLeft="64px"-->
+<!--            android:background="@drawable/rel_layout_bg">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/usb1_img"-->
+<!--                android:layout_width="80px"-->
+<!--                android:layout_height="80px"-->
+<!--                android:src="@drawable/usb_file"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/usb1_progressBar"-->
+<!--                android:layout_width="48px"-->
+<!--                android:layout_height="48px"-->
+<!--                android:indeterminate="true"-->
+<!--                android:visibility="gone"-->
+<!--                android:indeterminateDrawable="@drawable/progressbar"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="48px"-->
+<!--                android:text="@string/axue_usb"-->
+<!--                android:textSize="28px"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="@color/setting_title_color"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                android:layout_marginBottom="17px"/>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/usb2_rel"-->
+<!--            android:layout_width="176px"-->
+<!--            android:layout_height="200px"-->
+<!--            android:layout_marginTop="38px"-->
+<!--            android:layout_marginLeft="64px"-->
+<!--            android:background="@drawable/rel_layout_bg">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/usb2_img"-->
+<!--                android:layout_width="80px"-->
+<!--                android:layout_height="80px"-->
+<!--                android:src="@drawable/usb_file"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/usb2_progressBar"-->
+<!--                android:layout_width="48px"-->
+<!--                android:layout_height="48px"-->
+<!--                android:indeterminate="true"-->
+<!--                android:visibility="gone"-->
+<!--                android:indeterminateDrawable="@drawable/progressbar"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="48px"-->
+<!--                android:text="@string/usb2"-->
+<!--                android:textSize="28px"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="@color/setting_title_color"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                android:layout_marginBottom="17px"/>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

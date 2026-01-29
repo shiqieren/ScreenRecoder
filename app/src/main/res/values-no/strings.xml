@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Skjermopptaker</string>
+    <string name="device_not_support_screen_record">Dessverre er ikke skjermopptakeren kompatibel med enheten din.</string>
+    <string name="permission_denied">Det krever at man gir tillatelser for skjermopptaker, ellers kan ikke skjermen tas opp.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Vil du lagre de registrerte dataene?</string>
+    <string name="cancel">Kansellere</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Lagringsplassen din er nesten full. Vil du lagre gjeldende data?</string>
+    <string name="save">Spare</string>
+    <string name="newline_recording">Skjermopptaker</string>
+    <string name="tv_quality">Kvalitet</string>
+    <string name="tv_system_audio">Systemlyd</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Ikke nok minne</string>
+    <string name="storage_insufficient">For å starte opptaket kreves det minst 20 MB ledig plass.</string>
+    <string name="setting_title">Innstillinger</string>
+    <string name="mic_option">Mikrofonalternativ</string>
+    <string name="Resolution">Oppløsning</string>
+    <string name="built_mic">Innebygd mikrofon</string>
+    <string name="system_auto">Systemlyd</string>
+    <string name="micAndSystem">Mikrofon og systemlyd</string>
+    <string name="mute">Stum</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Tom for minne</string>
+    <string name="recording_stop">Opptaket er stoppet på grunn av for lite minneplass. For å starte opptaket kreves det minst 20 MB ledig plass.</string>
+    <string name="exit_screen">Avslutte skjermopptakeren?</string>
+    <string name="exit_message">Er du sikker på at du vil avslutte denne plugin-modulen?</string>
+    <string name="exit">Gå</string>
+    <string name="save_to">Lagre til</string>
+    <string name="locality">Lokal lagring</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Lagre i skjermopptaksmappen</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

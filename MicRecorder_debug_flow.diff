@@ -1,0 +1,233 @@
+--- a/MicRecorder.java
++++ b/MicRecorder.java
+@@ -81,6 +81,39 @@
+     private long mLastLogTimeMs = 0;             // 上次打印统计日志的时间
+     private static final long LOG_INTERVAL_MS = 5000; // 每5秒打印一次统计信息
+ 
++    // ===== DEBUG FLOW =====
++    // 开关：打开后会打印更详细的“输入->编码->输出->回调->释放”链路日志
++    private static final boolean DEBUG_FLOW = true;
++    // 调试建议：输出 dequeue 超时时间不要太小（原来是 1us，容易一直 TRY_AGAIN）
++    private static final int OUT_TIMEOUT_US = 10_000;
++    private volatile long mLastOfferOutputMs = 0;
++    private volatile long mLastOutputBufferMs = 0;
++    private volatile long mLastReleaseOutputMs = 0;
++    private volatile long mLastFeedInputMs = 0;
++    private int mNoInputStreak = 0;
++    private int mTryAgainOutputStreak = 0;
++
++    private static String msgName(int what) {
++        switch (what) {
++            case MSG_PREPARE: return "MSG_PREPARE";
++            case MSG_FEED_INPUT: return "MSG_FEED_INPUT";
++            case MSG_DRAIN_OUTPUT: return "MSG_DRAIN_OUTPUT";
++            case MSG_RELEASE_OUTPUT: return "MSG_RELEASE_OUTPUT";
++            case MSG_STOP: return "MSG_STOP";
++            case MSG_RELEASE: return "MSG_RELEASE";
++            default: return "MSG_" + what;
++        }
++    }
++
++    private static String flagsToStr(int flags) {
++        StringBuilder sb = new StringBuilder();
++        if ((flags & MediaCodec.BUFFER_FLAG_CODEC_CONFIG) != 0) sb.append("CFG|");
++        if ((flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0) sb.append("EOS|");
++        if ((flags & MediaCodec.BUFFER_FLAG_KEY_FRAME) != 0) sb.append("KEY|");
++        if (sb.length() == 0) sb.append("0");
++        return sb.toString();
++    }
++
+     public void setMediaProjection(MediaProjection mediaProjection) {
+         this.mediaProjection = mediaProjection;
+     }
+@@ -235,7 +268,16 @@
+     }
+ 
+     void releaseOutputBuffer(int index) {
+-        if (VERBOSE) Log.d(TAG, "audio encoder released output buffer index=" + index);
++        if (DEBUG_FLOW) {
++            mLastReleaseOutputMs = System.currentTimeMillis();
++            int qSize = -1;
++            try {
++                if (mRecordHandler != null) qSize = mRecordHandler.mMuxingOutputBufferIndices.size();
++            } catch (Throwable ignore) { }
++            Log.d(TAG, "[FLOW][REL] releaseOutputBuffer index=" + index + ", muxQ=" + qSize);
++        } else if (VERBOSE) {
++            Log.d(TAG, "audio encoder released output buffer index=" + index);
++        }
+         Message.obtain(mRecordHandler, MSG_RELEASE_OUTPUT, index, 0).sendToTarget();
+     }
+ 
+@@ -252,26 +294,48 @@
+             super(l);
+             this.mCallback = callback;
+         }
+-
+-
+         void onError(Encoder encoder, Exception exception) {
++            if (DEBUG_FLOW) {
++                Log.e(TAG, "[FLOW][CB-POST] onError: " + exception);
++            }
+             Message.obtain(this, () -> {
++                if (DEBUG_FLOW) {
++                    Log.e(TAG, "[FLOW][CB-RUN ] onError thread=" + Thread.currentThread().getName(), exception);
++                }
+                 if (mCallback != null) {
+                     mCallback.onError(encoder, exception);
+                 }
+             }).sendToTarget();
+         }
+-
+         void onOutputFormatChanged(BaseEncoder encoder, MediaFormat format) {
++            if (DEBUG_FLOW) {
++                Log.d(TAG, "[FLOW][CB-POST] onOutputFormatChanged format=" + format);
++            }
+             Message.obtain(this, () -> {
++                if (DEBUG_FLOW) {
++                    Log.d(TAG, "[FLOW][CB-RUN ] onOutputFormatChanged thread=" + Thread.currentThread().getName()
++                            + " format=" + format);
++                }
+                 if (mCallback != null) {
+                     mCallback.onOutputFormatChanged(encoder, format);
+                 }
+             }).sendToTarget();
+         }
+-
+         void onOutputBufferAvailable(BaseEncoder encoder, int index, MediaCodec.BufferInfo info) {
++            if (DEBUG_FLOW) {
++                Log.d(TAG, "[FLOW][CB-POST] onOutputBufferAvailable index=" + index
++                        + " size=" + info.size
++                        + " pts=" + info.presentationTimeUs
++                        + " flags=" + flagsToStr(info.flags));
++            }
+             Message.obtain(this, () -> {
++                if (DEBUG_FLOW) {
++                    Log.d(TAG, "[FLOW][CB-RUN ] onOutputBufferAvailable index=" + index
++                            + " size=" + info.size
++                            + " pts=" + info.presentationTimeUs
++                            + " flags=" + flagsToStr(info.flags)
++                            + " thread=" + Thread.currentThread().getName());
++                }
+                 if (mCallback != null) {
+                     mCallback.onOutputBufferAvailable(encoder, index, info);
+                 }
+@@ -301,6 +365,13 @@
+ 
+         @Override
+         public void handleMessage(Message msg) {
++            if (DEBUG_FLOW) {
++                Log.d(TAG, "[FLOW] handle=" + msgName(msg.what)
++                        + " forceStop=" + mForceStop.get()
++                        + " muxQ=" + mMuxingOutputBufferIndices.size()
++                        + " cachedInfo=" + mCachedInfos.size()
++                        + " t=" + SystemClock.uptimeMillis());
++            }
+             switch (msg.what) {
+                 case MSG_PREPARE:
+                     AudioRecord r = createAudioRecord(mSampleRate, mChannelConfig, mFormat);
+@@ -356,13 +427,24 @@
+                 case MSG_FEED_INPUT:
+                     if (!mForceStop.get()) {
+                         int index = pollInput();
+-                        if (VERBOSE)
++                        mLastFeedInputMs = System.currentTimeMillis();
++                        if (DEBUG_FLOW) {
++                            Log.d(TAG, "[FLOW][IN] pollInput index=" + index
++                                    + " noInputStreak=" + mNoInputStreak
++                                    + " muxQ=" + mMuxingOutputBufferIndices.size());
++                        } else if (VERBOSE) {
+                             Log.d(TAG, "audio encoder returned input buffer index=" + index);
++                        }
+                         if (index >= 0) {
++                            mNoInputStreak = 0;
+                             feedAudioEncoder(index);
+                             // tell encoder to eat the fresh meat!
+                             if (!mForceStop.get()) sendEmptyMessage(MSG_DRAIN_OUTPUT);
+                         } else {
++                            mNoInputStreak++;
++                            // 调试兜底：即使没拿到 input，也 drain 一下 output，避免只等 input 导致输出堵塞
++                            if (DEBUG_FLOW) sendEmptyMessage(MSG_DRAIN_OUTPUT);
++
+                             // try later...
+                             if (VERBOSE) Log.i(TAG, "try later to poll input buffer");
+                             sendEmptyMessageDelayed(MSG_FEED_INPUT, mPollRate);
+@@ -410,31 +492,63 @@
+                     break;
+             }
+         }
+-
+         private void offerOutput() {
++            int loops = 0;
+             while (!mForceStop.get()) {
++                loops++;
+                 MediaCodec.BufferInfo info = mCachedInfos.poll();
+                 if (info == null) {
+                     info = new MediaCodec.BufferInfo();
+                 }
+-                int index = mEncoder.getEncoder().dequeueOutputBuffer(info, 1);
++
++                int index = mEncoder.getEncoder().dequeueOutputBuffer(info, OUT_TIMEOUT_US);
++                mLastOfferOutputMs = System.currentTimeMillis();
++
++                if (index == MediaCodec.INFO_TRY_AGAIN_LATER) {
++                    mTryAgainOutputStreak++;
++                    if (DEBUG_FLOW && (mTryAgainOutputStreak % 20 == 0)) {
++                        Log.d(TAG, "[FLOW][OUT] TRY_AGAIN x" + mTryAgainOutputStreak
++                                + " loops=" + loops
++                                + " muxQ=" + mMuxingOutputBufferIndices.size());
++                    } else {
++                        Log.d(TAG, "offerOutput: dequeueOutputBuffer returned index=" + index +
++                                " (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)");
++                    }
++                    info.set(0, 0, 0, 0);
++                    mCachedInfos.offer(info);
++                    break;
++                } else {
++                    mTryAgainOutputStreak = 0;
++                }
++
+                 Log.d(TAG, "offerOutput: dequeueOutputBuffer returned index=" + index +
+                         " (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)");
++
+                 if (index == INFO_OUTPUT_FORMAT_CHANGED) {
+                     MediaFormat format = mEncoder.getEncoder().getOutputFormat();
+-                    Log.d(TAG, "offerOutput: INFO_OUTPUT_FORMAT_CHANGED! format=" + format);
++                    Log.d(TAG, "[FLOW][OUT] INFO_OUTPUT_FORMAT_CHANGED format=" + format);
+                     mCallbackDelegate.onOutputFormatChanged(mEncoder, format);
+-                }
++                    // 重要：format changed 之后要继续 drain，不能 break
++                    info.set(0, 0, 0, 0);
++                    mCachedInfos.offer(info);
++                    continue;
++                }
++
+                 if (index < 0) {
+                     info.set(0, 0, 0, 0);
+                     mCachedInfos.offer(info);
+                     break;
+                 }
+-                Log.d(TAG, "offerOutput: Got output buffer index=" + index + ", size=" + info.size +
+-                        ", flags=" + info.flags + ", pts=" + info.presentationTimeUs);
++
++                mLastOutputBufferMs = System.currentTimeMillis();
++                Log.d(TAG, "[FLOW][OUT] index=" + index
++                        + " size=" + info.size
++                        + " pts=" + info.presentationTimeUs
++                        + " flags=" + flagsToStr(info.flags)
++                        + " loops=" + loops);
++
+                 mMuxingOutputBufferIndices.offer(index);
+                 mCallbackDelegate.onOutputBufferAvailable(mEncoder, index, info);
+-
+             }
+         }
+ 
+@@ -565,7 +679,7 @@
+ 
+ 
+             long pstTs = calculateFrameTimestamp(bytesToRead << 3);*/
+-            int flags = BUFFER_FLAG_KEY_FRAME;
++            int flags = 0;
+ 
+             // ===== 音频编码统计日志 =====
+             mTotalBytesEncoded += bytesToRead;

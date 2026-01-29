@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Snemalnik zaslona</string>
+    <string name="device_not_support_screen_record">Žal snemalnik zaslona ni združljiv z vašo napravo.</string>
+    <string name="permission_denied">Zahteva odobritev dovoljenj za snemalnik zaslona, ​​sicer zaslona ni mogoče posneti.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Ali želite shraniti posnete podatke?</string>
+    <string name="cancel">Prekliči</string>
+    <string name="ok">V redu</string>
+    <string name="low_space_content">Vaš prostor za shranjevanje je skoraj poln. Ali želite shraniti trenutne podatke?</string>
+    <string name="save">Shrani</string>
+    <string name="newline_recording">Snemalnik zaslona</string>
+    <string name="tv_quality">Kakovost</string>
+    <string name="tv_system_audio">Sistemski zvok</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Ni dovolj pomnilnika</string>
+    <string name="storage_insufficient">Za začetek snemanja je potrebnih vsaj 20 MB prostega prostora.</string>
+    <string name="setting_title">Nastavitve</string>
+    <string name="mic_option">Možnost mikrofona</string>
+    <string name="Resolution">Ločljivost</string>
+    <string name="built_mic">Vgrajen mikrofon</string>
+    <string name="system_auto">Sistemski zvok</string>
+    <string name="micAndSystem">Mikrofon in sistemski zvok</string>
+    <string name="mute">Izklopi zvok</string>
+    <string name="four_definition">3840 x 2160</string>
+    <string name="two_definition">1920 x 1080</string>
+    <string name="live_definition">1280 x 720</string>
+    <string name="high_definition">960 x 720</string>
+    <string name="out_of_memory">Zmanjkalo pomnilnika</string>
+    <string name="recording_stop">Snemanje je bilo ustavljeno zaradi pomanjkanja prostora v pomnilniku. Za začetek snemanja je potrebnih vsaj 20 MB prostega prostora.</string>
+    <string name="exit_screen">Zapreti snemalnik zaslona?</string>
+    <string name="exit_message">Ali ste prepričani, da želite zapreti ta vtičnik?</string>
+    <string name="exit">Izhod</string>
+    <string name="save_to">Shrani v</string>
+    <string name="locality">Lokalno shranjevanje</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Shrani v mapo z posnetki zaslona</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

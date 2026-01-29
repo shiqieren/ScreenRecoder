@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Rekordér</string>
+    <string name="device_not_support_screen_record">Bohužiaľ, rekordér obrazovky nie je kompatibilný s vaším zariadením.</string>
+    <string name="permission_denied">Vyžaduje si povolenie pre rekordér obrazovky, inak nie je možné zaznamenať obrazovku.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Chcete uložiť zaznamenané údaje?</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Váš úložný priestor je takmer plný, chcete uložiť aktuálne údaje?</string>
+    <string name="save">Uložiť</string>
+    <string name="newline_recording">Rekordér</string>
+    <string name="tv_quality">Kvalita</string>
+    <string name="tv_system_audio">Zvuk</string>
+    <string name="tv_micophone">Mikrofón</string>
+    <string name="enough_memory">Nedostatok pamäte</string>
+    <string name="storage_insufficient">Na začatie nahrávania sa vyžaduje najmenej 20 MB voľného miesta.</string>
+    <string name="setting_title">Nastavenia</string>
+    <string name="mic_option">Možnosť mikrofónu</string>
+    <string name="Resolution">Rozhodnutie</string>
+    <string name="built_mic">Vstavaný mikrofón</string>
+    <string name="system_auto">Zvuk</string>
+    <string name="micAndSystem">Zvuk mikrofónu a systému</string>
+    <string name="mute">Stíšiť</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Nedostatok pamäte</string>
+    <string name="recording_stop">Nahrávanie bolo zastavené kvôli tomu, že nie je dostatok miesta na pamäti. Na začatie nahrávania sa vyžaduje najmenej 20 MB voľného miesta.</string>
+    <string name="exit_screen">Recorder na výstupnej obrazovke?</string>
+    <string name="exit_message">Ste si istí, že chcete opustiť tento doplnok?</string>
+    <string name="exit">VÝCHOD</string>
+    <string name="save_to">Uložiť do</string>
+    <string name="locality">Lokalita</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Uložiť do priečinka na obrazovku</string>
+</resources>

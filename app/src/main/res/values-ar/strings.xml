@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">مسجل الشاشة</string>
+    <string name="device_not_support_screen_record">لسوء الحظ ، لا يتوافق مسجل الشاشة مع جهازك.</string>
+    <string name="permission_denied">يتطلب الأمر منح أذونات مسجل الشاشة ، وإلا لا يمكن تسجيل الشاشة.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">هل تريد حفظ البيانات المسجلة؟</string>
+    <string name="cancel">يلغي</string>
+    <string name="ok">موافق</string>
+    <string name="low_space_content">مساحة التخزين الخاصة بك ممتلئة تقريبًا ، هل تريد حفظ البيانات الحالية؟</string>
+    <string name="save">يحفظ</string>
+    <string name="newline_recording">مسجل الشاشة</string>
+    <string name="tv_quality">جودة</string>
+    <string name="tv_system_audio">صوت النظام</string>
+    <string name="tv_micophone">ميكروفون</string>
+    <string name="enough_memory">الذاكرة غير كافية</string>
+    <string name="storage_insufficient">لبدء التسجيل ، مطلوب مساحة خالية 20 ميغابايت على الأقل.</string>
+    <string name="setting_title">إعدادات</string>
+    <string name="mic_option">خيار الميكروفون</string>
+    <string name="Resolution">الدقة</string>
+    <string name="built_mic">ميكروفون مدمج</string>
+    <string name="system_auto">صوت النظام</string>
+    <string name="micAndSystem">صوت الميكروفون والنظام</string>
+    <string name="mute">صامت</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">خارج الذاكرة</string>
+    <string name="recording_stop">تم إيقاف التسجيل بسبب عدم وجود مساحة كافية على الذاكرة. لبدء التسجيل ، مطلوب مساحة خالية 20 ميغابايت على الأقل.</string>
+    <string name="exit_screen">مسجل شاشة الخروج؟</string>
+    <string name="exit_message">هل أنت متأكد أنك تريد الخروج من هذا البرنامج المساعد؟</string>
+    <string name="exit">مخرج</string>
+    <string name="save_to">حفظ في</string>
+    <string name="locality">محلية</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">حفظ إلى المجلد سجل الشاشة</string>
+</resources>

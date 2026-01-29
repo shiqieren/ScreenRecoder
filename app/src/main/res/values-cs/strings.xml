@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Rekordér obrazovky</string>
+    <string name="device_not_support_screen_record">Bohužel, rekordér obrazovky není kompatibilní s vaším zařízením.</string>
+    <string name="permission_denied">Vyžaduje to, aby oprávnění pro rekordér obrazovky poskytla, jinak nelze zaznamenat obrazovku.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Chcete uložit zaznamenaná data?</string>
+    <string name="cancel">Zrušit</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Váš úložný prostor je téměř plný, chcete uložit aktuální data?</string>
+    <string name="save">Uložit</string>
+    <string name="newline_recording">Rekordér obrazovky</string>
+    <string name="tv_quality">Kvalitní</string>
+    <string name="tv_system_audio">Systémový zvuk</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Nedostatek paměti</string>
+    <string name="storage_insufficient">Pro začátek nahrávání je vyžadováno nejméně 20 MB volného prostoru.</string>
+    <string name="setting_title">Nastavení</string>
+    <string name="mic_option">Možnost mikrofonu</string>
+    <string name="Resolution">Rozlišení</string>
+    <string name="built_mic">Zabudovaný mikrofon</string>
+    <string name="system_auto">Systémový zvuk</string>
+    <string name="micAndSystem">Zvuk mikrofonu a systému</string>
+    <string name="mute">Potlačení zvuku</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Nedostatek paměti</string>
+    <string name="recording_stop">Záznam byl zastaven kvůli nedostatečnému prostoru na paměti. Pro začátek nahrávání je vyžadováno nejméně 20 MB volného prostoru.</string>
+    <string name="exit_screen">Exit Screen Recorder?</string>
+    <string name="exit_message">Jste si jisti, že chcete opustit tento plugin?</string>
+    <string name="exit">Výstup</string>
+    <string name="save_to">Uložit do</string>
+    <string name="locality">Lokalita</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Uložit na obrazovku záznamová složka</string>
+</resources>

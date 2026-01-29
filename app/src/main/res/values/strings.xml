@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Screen Recorder</string>
+    <string name="device_not_support_screen_record">Unfortunately,Screen Recorder is not compatible with your device.</string>
+    <string name="permission_denied">It requires to grant the permissions for Screen Recorder, otherwise the screen cannot be recorded.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Do you want to save the recorded data?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">Your storage space is almost full, do you want to save the current data?</string>
+    <string name="save">Save</string>
+    <string name="newline_recording">Screen Recorder</string>
+    <string name="tv_quality">Quality</string>
+    <string name="tv_system_audio">System Audio</string>
+    <string name="tv_micophone">Microphone</string>
+    <string name="enough_memory">Not enough memory</string>
+    <string name="storage_insufficient">For start recording, at least 20MB free space is required.</string>
+    <string name="setting_title">Settings</string>
+    <string name="mic_option">Microphone option</string>
+    <string name="Resolution">Resolution</string>
+    <string name="built_mic">Built-in microphone</string>
+    <string name="system_auto">System Audio</string>
+    <string name="micAndSystem">Microphone&amp;System Audio</string>
+    <string name="mute">Mute</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Out of memory</string>
+    <string name="recording_stop">The recording has been stopped due to not enough space on memory. For start recording, at least 20MB free space is required.</string>
+    <string name="exit_screen">Exit Screen Recorder ?</string>
+    <string name="exit_message">Are you sure you want to exit this plugin ?</string>
+    <string name="exit">Exit</string>
+    <string name="save_to">Save to</string>
+    <string name="locality">Local Storage</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Save to screen record folder</string>
+    <string name="fold">fold</string>
+    <string name="start_recoder">start recoder</string>
+    <string name="stop_recoder">stop recoder</string>
+    <string name="recorder_again">recorder again</string>
+    <string name="suspend">suspend</string>
+    <string name="str_continue">continue</string>
+    <!-- 录制停止原因提示 -->
+    <string name="stop_reason_time_limit">Recording has reached the maximum duration limit of 1 hour.</string>
+    <string name="stop_reason_low_space">Recording stopped due to insufficient storage space (less than 500MB).</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Ekranyň adyny dikeltmek</string>
+    <string name="device_not_support_screen_record">Gynansagam, ekran ýazgysy enjamyňyz bilen gabat gelmeýär.</string>
+    <string name="permission_denied">Ekranda dikeltmek üçin rugsatlara berilmegi talap edýär, ýogsam, ekrana ýazylyp bilinmez.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Recordedazga alnan maglumatlary saklamak isleýärsiňizmi?</string>
+    <string name="cancel">Ýatyr</string>
+    <string name="ok">Bolýar</string>
+    <string name="low_space_content">Saçyndaky ýeriňiz doly diýen ýaly, häzirki maglumatlary saklamak isleýärsiňizmi?</string>
+    <string name="save">Tygşytlaň</string>
+    <string name="newline_recording">Ekranyň adyny dikeltmek</string>
+    <string name="tv_quality">Hili</string>
+    <string name="tv_system_audio">Ulgam audio</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Ýeterlik ýat däl</string>
+    <string name="storage_insufficient">Ordingazga başlamak üçin azyndan 20MB boş ýer talap edilýär.</string>
+    <string name="setting_title">Sazlamalar</string>
+    <string name="mic_option">Mikrofon warianty</string>
+    <string name="Resolution">Çözgüdi</string>
+    <string name="built_mic">Gurlan mikrofon</string>
+    <string name="system_auto">Ulgam audio</string>
+    <string name="micAndSystem">Mikrofon we ulgam sesleri</string>
+    <string name="mute">Lal</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">Ýatdan çykmasyn</string>
+    <string name="recording_stop">Ordingazga ýatda ýeterlik ýer ýoklugy sebäpli saklandy. Ordingazga başlamak üçin azyndan 20MB boş ýer talap edilýär.</string>
+    <string name="exit_screen">Ekranyň ýazgysyny çykaryň?</string>
+    <string name="exit_message">Bu pluginden çykmak isleýändigiňize ynanýarsyňyzmy?</string>
+    <string name="exit">Çykyş</string>
+    <string name="save_to">Saklaň</string>
+    <string name="locality">Linallyk</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Ekranyň ýazgy bukjasyny ýazdyryň</string>
+</resources>

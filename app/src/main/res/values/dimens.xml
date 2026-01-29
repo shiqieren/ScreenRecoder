@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="record_tool_floating_padding">0dp</dimen>
+    <dimen name="record_tool_duration_width">48dp</dimen>
+    <dimen name="record_tool_icon_size">32dp</dimen>
+
+<!--   setting menu -->
+    <dimen name="setting_menu_width">400dp</dimen>
+    <dimen name="setting_menu_height">366dp</dimen>
+    <dimen name="setting_margin_parent">24dp</dimen>
+    <dimen name="setting_margin_top">10dp</dimen>
+    <dimen name="setting_button_size">35dp</dimen>
+    <dimen name="setting_normal_text_height">36dp</dimen>
+    <dimen name="setting_normal_text_size">14sp</dimen>
+    <dimen name="setting_title_text_height">60dp</dimen>
+    <dimen name="setting_title_text_size">16sp</dimen>
+    <dimen name="setting_save_path_layout_height">72dp</dimen>
+    <dimen name="setting_switch_size">36dp</dimen>
+    <dimen name="setting_btn_height">36dp</dimen>
+    <dimen name="setting_btn_width">150dp</dimen>
+    <dimen name="setting_btn_margin_parent">38dp</dimen>
+    <dimen name="setting_list_height">40dp</dimen>
+    <dimen name="setting_list_margin_parent">6dp</dimen>
+    <dimen name="setting_list_paddind_left">16dp</dimen>
+
+    <!--   warning menu -->
+    <dimen name="warning_margin_parent">18dp</dimen>
+
+</resources>

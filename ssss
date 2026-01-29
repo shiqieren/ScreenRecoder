@@ -1,0 +1,2698 @@
+
+ D  ScreenRecorder onStart - 录制真正开始
+ D  dataspace changed to 0x104 pixel format: 0x11
+ V  Null context, checking permission via ActivityManager
+ V  Null context, checking permission via ActivityManager
+ V  Will record from REMOTE_SUBMIX at full fixed volume
+ D  c2 config diff is   Buffer coded.init-data.value = {
+        00000000:  00 00 00 01 67 42 00 29  e3 58 0f 00 44 fc a8 00  ....gB.).X..D...
+        00000010:  00 00 01 68 ca 8f 20                              ...h..
+ D  createInternalAudioRecord: AudioRecord created - state=1 (1=INITIALIZED, 0=UNINITIALIZED)
+ D  === INTERNAL MODE INIT END ===
+ D  MSG_PREPARE: SINGLE mode - mAudioRecord=android.media.AudioRecord@d6e8d74, mAudioRecordMic=null, r=android.media.AudioRecord@d6e8d74
+ I  ★ Video output format changed! format: {max-bitrate=10368000, crop-right=1919, level=32768, mime=video/avc, profile=1, bitrate=10368000, intra-refresh-period=0, color-standard=1, csd-1=java.nio.HeapByteBuffer[pos=0 lim=8 cap=8], color-transfer=3, crop-bottom=1079, prepend-sps-pps-to-idr-frames=0, video-qp-average=0, crop-left=0, width=1920, bitrate-mode=1, color-range=2, crop-top=0, frame-rate=30, height=1080, csd-0=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}
+ D  startMuxerIfReady: mMuxerStarted=false, mVideoOutputFormat=SET, mAudioEncoder=SET, mAudioOutputFormat=NULL
+ D  startMuxerIfReady: NOT READY - returning early
+ D  muxVideo: Muxer not ready - PENDING video buffer index=0, mMuxerStarted=false, mVideoTrackIndex=-1
+ D  muxVideo: Muxer not ready - PENDING video buffer index=1, mMuxerStarted=false, mVideoTrackIndex=-1
+ D  muxVideo: Muxer not ready - PENDING video buffer index=2, mMuxerStarted=false, mVideoTrackIndex=-1
+ D  muxVideo: Muxer not ready - PENDING video buffer index=3, mMuxerStarted=false, mVideoTrackIndex=-1
+ D  startRecordingWithVerify [SINGLE]: SUCCESS, recordingState=3
+ D  MSG_PREPARE: mMic assigned = android.media.AudioRecord@d6e8d74
+ I  ★★★ WALL CLOCK PTS INITIALIZED ★★★ startTimeNanos=775384571493
+ D  Create media format: {sample-rate=44100, mime=audio/mp4a-latm, channel-count=1, aac-profile=2, bitrate=320000}
+ D  allocate(c2.android.aac.encoder)
+ I  setting up 'default' as default (vendor) store
+ I  Created component [c2.android.aac.encoder]
+ D  read media type: audio/mp4a-latm
+ D  extent() != 1 for single value type: algo.buffers.max-count.values
+ D  extent() != 1 for single value type: output.subscribed-indices.values
+ D  extent() != 1 for single value type: input.buffers.allocator-ids.values
+ D  extent() != 1 for single value type: output.buffers.allocator-ids.values
+ D  extent() != 1 for single value type: algo.buffers.allocator-ids.values
+ D  extent() != 1 for single value type: output.buffers.pool-ids.values
+ D  extent() != 1 for single value type: algo.buffers.pool-ids.values
+ I  query failed after returning 9 values (BAD_INDEX)
+ D  c2 config diff is Dict {
+      c2::u32 coded.bitrate.value = 64000
+      c2::u32 coded.pl.level = 0
+      c2::u32 coded.pl.profile = 8192
+      c2::u32 coding.aac-sbr-mode.value = 3
+      c2::u32 input.buffers.max-size.value = 2048
+      c2::u32 input.delay.value = 0
+      string input.media-type.value = "audio/raw"
+      string output.media-type.value = "audio/mp4a-latm"
+      c2::u32 raw.channel-count.value = 1
+      c2::u32 raw.sample-rate.value = 44100
+    }
+ D  CreateByComponentName(c2.android.aac.encoder, pid:-1 uid:-1) MediaCodec:0xb4000070c017d160
+ D  0xb4000070c017d160 configure(format:0xb400007240134bb0, surface:0x0, crypto:0x0, flags:1)
+ D  video:audio, format:AMessage(what = 0x00000000) = {
+      int32_t sample-rate = 44100
+      string mime = "audio/mp4a-latm"
+      int32_t channel-count = 1
+      int32_t aac-profile = 2
+      int32_t bitrate = 320000
+    }
+ D  shapeMediaFormat: deltas(0): AMessage(what = 0x00000000) = {
+      }
+ D  flushMediametrics
+ D  [c2.android.aac.encoder] buffers are bound to CCodec for this session
+ D  no c2 equivalents for flags
+ D  no c2 equivalents for encoder
+ D  c2 config diff is   c2::u32 coded.bitrate.value = 320000
+ W  query -- param skipped: index = 1107298332.
+ D  encoding statistics level = 0
+ D  setup formats input: AMessage(what = 0x00000000) = {
+      int32_t sample-rate = 44100
+      int32_t channel-count = 1
+      int32_t max-input-size = 2048
+      string mime = "audio/raw"
+      int32_t android._config-pcm-encoding = 2
+    }
+ D  setup formats output: AMessage(what = 0x00000000) = {
+      int32_t sample-rate = 44100
+      int32_t bitrate = 320000
+      int32_t channel-count = 1
+      int32_t level = 0
+      int32_t max-bitrate = 320000
+      string mime = "audio/mp4a-latm"
+      int32_t profile = 2
+    }
+ I  query failed after returning 9 values (BAD_INDEX)
+ D  0xb4000070c017d160 (audio)start()
+ W  query -- param skipped: index = 1342179345.
+ W  query -- param skipped: index = 2415921170.
+ W  query -- param skipped: index = 3254792206.
+ W  query -- param skipped: index = 3254792194.
+ D  [c2.android.aac.encoder#411] Created input block pool with allocatorID 16 => poolID 19 - OK (0)
+ D  bufferpool2 0xb4000070f0146668 : 0(0 size) total buffers - 0(0 size) used buffers - 786/791 (recycle/alloc) - 8/1580 (fetch/transfer)
+ D  Destruction - bufferpool2 0xb4000070f0146668 cached: 0/0M, 0/0% in use; allocs: 791, 99% recycled; transfers: 1580, 99% unfetched
+ I  [c2.android.aac.encoder#411] Created output block pool with allocatorID 16 => poolID 29 - OK
+ D  [c2.android.aac.encoder#411] Configured output block pool ids 29 => OK
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #1, bytesToRead=2048, pstTs=175686, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=14336
+ D  encode: Queued audio frame #2, bytesToRead=2048, pstTs=182250, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=12288
+ D  encode: Queued audio frame #3, bytesToRead=2048, pstTs=186481, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=10240
+ D  encode: Queued audio frame #4, bytesToRead=2048, pstTs=192174, flags=1
+ D  encode: Requested next buffer, index=0, remainingBytes=8192
+ D  encode: Queued audio frame #5, bytesToRead=2048, pstTs=196053, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=6144
+ D  encode: Queued audio frame #6, bytesToRead=2048, pstTs=214106, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=4096
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 4096 bytes (count=1, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=-2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ INFO_OUTPUT_FORMAT_CHANGED ★★★ format={max-bitrate=320000, sample-rate=44100, level=0, mime=audio/mp4a-latm, profile=2, channel-count=1, bitrate=320000, csd-0=java.nio.HeapByteBuffer[pos=0 lim=2 cap=2]}
+ D  offerOutput: [Loop 1] No more buffers, breaking. Total loops=1
+ I  ★★★ AudioEncoder.Callback.onOutputFormatChanged CALLED ★★★
+ I  Audio format: {max-bitrate=320000, sample-rate=44100, level=0, mime=audio/mp4a-latm, profile=2, channel-count=1, bitrate=320000, csd-0=java.nio.HeapByteBuffer[pos=0 lim=2 cap=2]}
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=1
+ I  ★ Audio output format changed! format: {max-bitrate=320000, sample-rate=44100, level=0, mime=audio/mp4a-latm, profile=2, channel-count=1, bitrate=320000, csd-0=java.nio.HeapByteBuffer[pos=0 lim=2 cap=2]}
+ D  AudioEncoder.Callback: Calling startMuxerIfReady...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  startMuxerIfReady: mMuxerStarted=false, mVideoOutputFormat=SET, mAudioEncoder=SET, mAudioOutputFormat=SET
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ I  Video track added successfully, index=0
+ I  Audio track added successfully, index=1
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  fpathconf _PC_FILESIZEBITS:64
+ D  File size limit set to 4503599627370495 bytes implicitly
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=2, flags=2, pts=0
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  MP4WtrCtrlHlpLooper Started
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=175686
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=198905
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=222124
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  limits: 4503599627370495/0 bytes/us, bit rate: -1 bps and the estimated moov size 3192 bytes
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  ★★★ Started media muxer! videoIndex=0, audioIndex=1
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=23, pts=775134810, flags=2, mPauseMux=false
+ W  writeSampleData: SKIPPED - buffer.size == 0 and not EOS
+ W  writeSampleData: SKIPPED - encodedData is null
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=298239, pts=775134810, flags=1, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=298239, pts=0
+ I  setStartTimestampUs: 0
+ I  Earliest track starting time: 0
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=40352, pts=775151228, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=40352, pts=16418
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39279, pts=775171968, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39279, pts=37158
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: startMuxerIfReady returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=2, pts=0, flags=2
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=2, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=2, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=2, pts=0, flags=2, mPauseMux=false
+ W  writeSampleData: SKIPPED - buffer.size == 0 and not EOS
+ W  writeSampleData: SKIPPED - encodedData is null
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=175686, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=175686, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=0
+ I  setStartTimestampUs: 0
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=1, total bytes=768
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=198905, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=198905, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=23219
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=2, total bytes=1536
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=222124, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=222124, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=46438
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=3, total bytes=2304
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=43698, pts=775203476, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=43698, pts=68666
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=41322, pts=775233722, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=41322, pts=98912
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ I  processPendingFrames: Processing queued frame (bytes=4096, age=49ms, remainingQueue=0)
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=37935, pts=775270850, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=37935, pts=136040
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=4096, bufferCapacity=2048, will truncate
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=37934, pts=775302922, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=37934, pts=168112
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ W  processPendingFrames: Truncated 2048 bytes (totalDropped=2048)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=1, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=35217, pts=775333123, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=35217, pts=198313
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=31613, pts=775367929, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=31613, pts=233119
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=30312, pts=775404662, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=30312, pts=269852
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=25137, pts=775433315, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=25137, pts=298505
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=24853, pts=775467447, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=24853, pts=332637
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=20452, pts=775503498, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=20452, pts=368688
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=19582, pts=775532610, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=19582, pts=397800
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=23170, pts=775568858, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=23170, pts=434048
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=26692, pts=775604959, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=26692, pts=470149
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=21109, pts=775636238, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=21109, pts=501428
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=19534, pts=775670109, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=19534, pts=535299
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=19621, pts=775704629, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=19621, pts=569819
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #8, bytesToRead=2048, pstTs=358787, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #9, bytesToRead=2048, pstTs=360521, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #10, bytesToRead=2048, pstTs=362114, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=2, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=245343
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=245343, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=245343, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=69657
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=4, total bytes=3072
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=268562
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=268562, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=291781
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=268562, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=92876
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=315000
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=5, total bytes=3840
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=291781, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=291781, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=116095
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=6, total bytes=4608
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=315000, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=315000, flags=0, mPauseMux=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=139314
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=7, total bytes=5376
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=13ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=18151, pts=775732186, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=18151, pts=597376
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=10240)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=2, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=22117, pts=775769133, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=22117, pts=634323
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=19425, pts=775804497, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=19425, pts=669687
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=19261, pts=775831772, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=19261, pts=696962
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=17326, pts=775866812, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=17326, pts=732002
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=16749, pts=775902607, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=16749, pts=767797
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #12, bytesToRead=2048, pstTs=549404, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #13, bytesToRead=2048, pstTs=552527, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #14, bytesToRead=2048, pstTs=556838, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=3, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=338219
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=382006
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=405225
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=428444
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=338219, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=338219, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=162533
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=8, total bytes=6144
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=382006, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=382006, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=206320
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=9, total bytes=6912
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=405225, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=405225, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=229539
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=10, total bytes=7680
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=428444, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=428444, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=252758
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=11, total bytes=8448
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=16ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=18432)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=3, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=18885, pts=775940377, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=18885, pts=805567
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=16934, pts=775969935, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=16934, pts=835125
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13411, pts=776004582, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13411, pts=869772
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11654, pts=776034876, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11654, pts=900066
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  run: second+minute+hour------1+0+0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11418, pts=776069194, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11418, pts=934384
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #16, bytesToRead=2048, pstTs=730030, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #17, bytesToRead=2048, pstTs=732558, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #18, bytesToRead=2048, pstTs=738543, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=4, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=451663
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=572623
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=451663, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=451663, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=275977
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=595842
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=12, total bytes=9216
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=572623, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=572623, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=396937
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=13, total bytes=9984
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=595842, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=595842, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=420156
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=619061
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=14, total bytes=10752
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=619061, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=619061, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=443375
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=15, total bytes=11520
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=278713, pts=776102691, flags=1, mPauseMux=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=278713, pts=967881
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=24ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=26624)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=4, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39323, pts=776138346, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39323, pts=1003536
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39585, pts=776169574, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39585, pts=1034764
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=41663, pts=776204624, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=41663, pts=1069814
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39306, pts=776231813, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39306, pts=1097003
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=37004, pts=776269214, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=37004, pts=1134404
+ D  encode: Queued audio frame #20, bytesToRead=2048, pstTs=915661, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #21, bytesToRead=2048, pstTs=922571, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #22, bytesToRead=2048, pstTs=927537, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=5, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=642280
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=642280, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=753249
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=776468
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=642280, flags=0, mPauseMux=false
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=466594
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=799687
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  writeSampleData: Muxer write completed successfully
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ I  writeSampleData: AUDIO frame written! Total audio frames=16, total bytes=12288
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=753249, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=753249, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=577563
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=17, total bytes=13056
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=776468, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=776468, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=600782
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=18, total bytes=13824
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=799687, flags=0
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  muxAudio: Getting output buffer from encoder...
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=799687, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=822906
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=624001
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=19, total bytes=14592
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=938880
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=822906, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=822906, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=647220
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  writeSampleData: Muxer write completed successfully
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=962099
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  writeSampleData: AUDIO frame written! Total audio frames=20, total bytes=15360
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=938880, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  offerOutput: [Loop 4] No more buffers, breaking. Total loops=4
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=4
+ D  muxAudio: Getting output buffer from encoder...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=938880, flags=0, mPauseMux=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=763194
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=21, total bytes=16128
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=962099, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=18ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=962099, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=786413
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=22, total bytes=16896
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=34816)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=5, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=34324, pts=776302481, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=34324, pts=1167671
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=29624, pts=776333155, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=29624, pts=1198345
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=21873, pts=776369288, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=21873, pts=1234478
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=18427, pts=776403601, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=18427, pts=1268791
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=15549, pts=776431978, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=15549, pts=1297168
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #24, bytesToRead=2048, pstTs=1101707, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #25, bytesToRead=2048, pstTs=1110834, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13914, pts=776468322, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13914, pts=1333512
+ D  encode: Queued audio frame #26, bytesToRead=2048, pstTs=1113755, flags=1
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #27, bytesToRead=2048, pstTs=1116976, flags=1
+ D  encode: Requested next buffer, index=0, remainingBytes=8192
+ D  encode: Queued audio frame #28, bytesToRead=2048, pstTs=1122176, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=6144
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 6144 bytes (count=6, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=985318
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=985318, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=1008537
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=1124926
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=1148145
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 1] No more buffers, breaking. Total loops=1
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=1
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=985318, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=809632
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=23, total bytes=17664
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=1008537, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1008537, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=832851
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=24, total bytes=18432
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=1124926, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1124926, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=949240
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=25, total bytes=19200
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=1148145, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1148145, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=972459
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=26, total bytes=19968
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=14962, pts=776505607, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=14962, pts=1370797
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ I  processPendingFrames: Processing queued frame (bytes=6144, age=34ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=6144, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 4096 bytes (totalDropped=38912)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=6, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10957, pts=776532380, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10957, pts=1397570
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11524, pts=776567264, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11524, pts=1432454
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=15338, pts=776603230, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=15338, pts=1468420
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11850, pts=776637439, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11850, pts=1502629
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #30, bytesToRead=2048, pstTs=1288559, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #31, bytesToRead=2048, pstTs=1301999, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #32, bytesToRead=2048, pstTs=1306484, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=7, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=1171364
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=8876, pts=776665578, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=8876, pts=1530768
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=1194583
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=1217802
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=1241021
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 1] No more buffers, breaking. Total loops=1
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=1
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=1171364, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1171364, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=995678
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=27, total bytes=20736
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=1194583, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1194583, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1018897
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=28, total bytes=21504
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=1217802, flags=0
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1217802, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1042116
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=29, total bytes=22272
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=1241021, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1241021, flags=0, mPauseMux=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1065335
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=30, total bytes=23040
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=36ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=47104)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=7, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=8502, pts=776704356, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=8502, pts=1569546
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=8575, pts=776733407, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=8575, pts=1598597
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=8229, pts=776768716, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=8229, pts=1633906
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=9174, pts=776802992, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=9174, pts=1668182
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #34, bytesToRead=2048, pstTs=1473868, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=8914, pts=776841328, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=8914, pts=1706518
+ D  encode: Queued audio frame #35, bytesToRead=2048, pstTs=1485922, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #36, bytesToRead=2048, pstTs=1490477, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=8, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=1311778
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=1311778, flags=0
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=1334997
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=1358216
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1311778, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1136092
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=31, total bytes=23808
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=1334997, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=1381435
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1334997, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1159311
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=32, total bytes=24576
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=1358216, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=1497087
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 2] No more buffers, breaking. Total loops=2
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=2
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1358216, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1182530
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=33, total bytes=25344
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=1381435, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1381435, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1205749
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=34, total bytes=26112
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=1497087, flags=0
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=29ms, remainingQueue=0)
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1497087, flags=0, mPauseMux=false
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1321401
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=35, total bytes=26880
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=12695, pts=776869187, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=12695, pts=1734377
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=55296)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=8, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10094, pts=776903402, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10094, pts=1768592
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=9525, pts=776939506, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=9525, pts=1804696
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=9853, pts=776968397, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=9853, pts=1833587
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=9447, pts=777003173, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=9447, pts=1868363
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #38, bytesToRead=2048, pstTs=1660876, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #39, bytesToRead=2048, pstTs=1665711, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #40, bytesToRead=2048, pstTs=1670015, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #41, bytesToRead=2048, pstTs=1674745, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=8192
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 8192 bytes (count=9, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=1520306
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=1543525
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=1520306, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=1566744
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1520306, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1344620
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=1684095
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=36, total bytes=27648
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=1543525, flags=0
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=1707314
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1543525, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 2] No more buffers, breaking. Total loops=2
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=2
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1367839
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=37, total bytes=28416
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=1566744, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1566744, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1391058
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=38, total bytes=29184
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=1684095, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  run: second+minute+hour------2+0+0
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1684095, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1508409
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=39, total bytes=29952
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11226, pts=777035682, flags=0, mPauseMux=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11226, pts=1900872
+ I  processPendingFrames: Processing queued frame (bytes=8192, age=31ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=8192, bufferCapacity=2048, will truncate
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=1707314, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ W  processPendingFrames: Truncated 6144 bytes (totalDropped=61440)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=9, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=1707314, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=1531628
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=40, total bytes=30720
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=9959, pts=777071883, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=9959, pts=1937073
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=279646, pts=777101301, flags=1, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=279646, pts=1966491
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=37943, pts=777135482, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=37943, pts=2000672
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=41280, pts=777169859, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=41280, pts=2035049
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=40184, pts=777198656, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=40184, pts=2063846
+ D  [FRAME_10] INTERNAL: maxValue=0, isSilent=true, consecutiveSilent=10, mode=LOW_AMPLITUDE_NOISE
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  [SILENT_FILL] Applied mode=LOW_AMPLITUDE_NOISE, consecutiveSilent=10, bytes=16384
+ D  encode: Queued audio frame #43, bytesToRead=2048, pstTs=1848157, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #44, bytesToRead=2048, pstTs=1851152, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #45, bytesToRead=2048, pstTs=1855359, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #46, bytesToRead=2048, pstTs=1860848, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=8192
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 8192 bytes (count=10, queueSize=0)
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13067, pts=3635549
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=12417, pts=778807247, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=12417, pts=3672437
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11946, pts=778833555, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11946, pts=3698745
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=12307, pts=778867311, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=12307, pts=3732501
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #87, bytesToRead=2048, pstTs=3517200, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #88, bytesToRead=2048, pstTs=3520108, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #89, bytesToRead=2048, pstTs=3525276, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #90, bytesToRead=2048, pstTs=3528508, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=8192
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 8192 bytes (count=19, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=3423401
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=3423401, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=3446620
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3423401, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=3469839
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3247715
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=3540419
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 1] No more buffers, breaking. Total loops=1
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=1
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=85, total bytes=65280
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=3446620, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3446620, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3270934
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=86, total bytes=66048
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=3469839, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3469839, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3294153
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=87, total bytes=66816
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=3540419, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3540419, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3364733
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=88, total bytes=67584
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11159, pts=778904467, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11159, pts=3769657
+ I  processPendingFrames: Processing queued frame (bytes=8192, age=15ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=8192, bufferCapacity=2048, will truncate
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ W  processPendingFrames: Truncated 6144 bytes (totalDropped=124928)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=19, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10580, pts=778936636, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10580, pts=3801826
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10528, pts=778969288, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10528, pts=3834478
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=11085, pts=779001157, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=11085, pts=3866347
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10678, pts=779034358, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10678, pts=3899548
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  [FRAME_20] INTERNAL: maxValue=0, isSilent=true, consecutiveSilent=20, mode=LOW_AMPLITUDE_NOISE
+ D  [SILENT_FILL] Applied mode=LOW_AMPLITUDE_NOISE, consecutiveSilent=20, bytes=16384
+ D  run: second+minute+hour------4+0+0
+ D  encode: Queued audio frame #92, bytesToRead=2048, pstTs=3702660, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #93, bytesToRead=2048, pstTs=3708262, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #94, bytesToRead=2048, pstTs=3710984, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #95, bytesToRead=2048, pstTs=3716723, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=8192
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 8192 bytes (count=20, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=3563638
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=3586857
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=10921, pts=779071139, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=10921, pts=3936329
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=3563638, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3563638, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3387952
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=3610076
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=3633295
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=89, total bytes=68352
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=3586857, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3586857, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3411171
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=90, total bytes=69120
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=3610076, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3610076, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3434390
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=91, total bytes=69888
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=3633295, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3633295, flags=0, mPauseMux=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3457609
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=92, total bytes=70656
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=280489, pts=779099734, flags=1, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=280489, pts=3964924
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=3725879
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=3725879, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3725879, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3550193
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=93, total bytes=71424
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=3749098
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=3749098, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=3772317
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3749098, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 4] No more buffers, breaking. Total loops=4
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=4
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ I  processPendingFrames: Processing queued frame (bytes=8192, age=52ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=8192, bufferCapacity=2048, will truncate
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3573412
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=94, total bytes=72192
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=3772317, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3772317, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3596631
+ W  processPendingFrames: Truncated 6144 bytes (totalDropped=131072)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=20, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=95, total bytes=72960
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=37500, pts=779134403, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=37500, pts=3999593
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39352, pts=779170490, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39352, pts=4035680
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=40289, pts=779198474, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=40289, pts=4063664
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=39156, pts=779234939, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=39156, pts=4100129
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #97, bytesToRead=2048, pstTs=3890971, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #98, bytesToRead=2048, pstTs=3895753, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #99, bytesToRead=2048, pstTs=3900738, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=21, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=3795536
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=3795536, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=3818755
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3795536, flags=0, mPauseMux=false
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=3914190
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3619850
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=3937409
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 1] No more buffers, breaking. Total loops=1
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=1
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=96, total bytes=73728
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=3818755, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3818755, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3643069
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=97, total bytes=74496
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=3914190, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3914190, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3738504
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=98, total bytes=75264
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=3937409, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3937409, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3761723
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=10ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=99, total bytes=76032
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=33557, pts=779269928, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=33557, pts=4135118
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=139264)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=21, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=30890, pts=779308873, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=30890, pts=4174063
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=27862, pts=779333123, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=27862, pts=4198313
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=23777, pts=779369617, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=23777, pts=4234807
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=20416, pts=779404242, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=20416, pts=4269432
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #101, bytesToRead=2048, pstTs=4075079, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=20063, pts=779433335, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=20063, pts=4298525
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #102, bytesToRead=2048, pstTs=4081592, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #103, bytesToRead=2048, pstTs=4085828, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #104, bytesToRead=2048, pstTs=4093247, flags=1
+ D  encode: Requested next buffer, index=0, remainingBytes=8192
+ D  encode: Queued audio frame #105, bytesToRead=2048, pstTs=4096067, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=6144
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 6144 bytes (count=22, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=3960628
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=3960628, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3960628, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3784942
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=100, total bytes=76800
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=3983847
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=3983847, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=3983847, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3808161
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=101, total bytes=77568
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=4098298
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=4098298, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4098298, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3922612
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4121517
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=102, total bytes=78336
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=4121517, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4121517, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3945831
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=103, total bytes=79104
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=20596, pts=779471497, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=20596, pts=4336687
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=4144736
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=4144736, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4144736, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3969050
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=4167955
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=104, total bytes=79872
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=4167955, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4167955, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=3992269
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 3] No more buffers, breaking. Total loops=3
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=3
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=105, total bytes=80640
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ I  processPendingFrames: Processing queued frame (bytes=6144, age=29ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=6144, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 4096 bytes (totalDropped=143360)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=22, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=17828, pts=779505071, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=17828, pts=4370261
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=16479, pts=779532559, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=16479, pts=4397749
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=16326, pts=779566616, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=16326, pts=4431806
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=15934, pts=779604317, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=15934, pts=4469507
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #107, bytesToRead=2048, pstTs=4261002, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #108, bytesToRead=2048, pstTs=4266513, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #109, bytesToRead=2048, pstTs=4269090, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #110, bytesToRead=2048, pstTs=4275595, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=8192
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 8192 bytes (count=23, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4191174
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=4191174, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4191174, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4015488
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=106, total bytes=81408
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=15820, pts=779637879, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=15820, pts=4503069
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=4214393
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=4214393, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4214393, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4038707
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=107, total bytes=82176
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=4284221
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=4284221, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4284221, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4108535
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=4307440
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=108, total bytes=82944
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=4307440, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4307440, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4131754
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=109, total bytes=83712
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ W  MSG_FEED_INPUT: No input buffer available, but will drain output anyway
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4330659
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=4330659, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4330659, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4154973
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=110, total bytes=84480
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 2] No more buffers, breaking. Total loops=2
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=2
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  processPendingFrames: Processing queued frame (bytes=8192, age=33ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=8192, bufferCapacity=2048, will truncate
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13670, pts=779667898, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13670, pts=4533088
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ W  processPendingFrames: Truncated 6144 bytes (totalDropped=149504)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=23, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=14053, pts=779701435, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=14053, pts=4566625
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13068, pts=779736164, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13068, pts=4601354
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13156, pts=779770606, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13156, pts=4635796
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13045, pts=779799864, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13045, pts=4665054
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  encode: Queued audio frame #112, bytesToRead=2048, pstTs=4448485, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #113, bytesToRead=2048, pstTs=4451685, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #114, bytesToRead=2048, pstTs=4454110, flags=1
+ D  encode: Requested next buffer, index=1, remainingBytes=10240
+ D  encode: Queued audio frame #115, bytesToRead=2048, pstTs=4459408, flags=1
+ D  encode: Requested next buffer, index=0, remainingBytes=8192
+ D  encode: Queued audio frame #116, bytesToRead=2048, pstTs=4462271, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=6144
+ D  encode: Queued audio frame #117, bytesToRead=2048, pstTs=4463900, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=4096
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 4096 bytes (count=24, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=4353878
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=4353878, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4353878, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4178192
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=111, total bytes=85248
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4377097
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=4377097, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4377097, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4201411
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=112, total bytes=86016
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=4471704
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=4471704, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4471704, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4296018
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=113, total bytes=86784
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=4494923
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=4494923, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4494923, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4319237
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=114, total bytes=87552
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=14274, pts=779836681, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=14274, pts=4701871
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  processPendingFrames: Processing queued frame (bytes=4096, age=24ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=4096, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 2048 bytes (totalDropped=151552)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=24, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=14288, pts=779871622, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=14288, pts=4736812
+ D  writeSampleData: Muxer write completed successfully
+ I  ╔═══════════════════════════════════════════════════════════════
+ I  ║ 📹 MUXER STATS (last 5s)
+ I  ╠═══════════════════════════════════════════════════════════════
+ I  ║ VIDEO:
+ I  ║   Frames:       144 (28.58 fps)
+ I  ║   Bytes:        4308640 (4207 KB)
+ I  ║   Bitrate:      6681.47 Kbps
+ I  ║ AUDIO:
+ I  ║   Frames:       114
+ I  ║   Bytes:        87552 (85 KB)
+ I  ║   Bitrate:      135.77 Kbps
+ I  ╚═══════════════════════════════════════════════════════════════
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13234, pts=779898748, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13234, pts=4763938
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13633, pts=779933477, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13633, pts=4798667
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13767, pts=779970432, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13767, pts=4835622
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #119, bytesToRead=2048, pstTs=4638428, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #120, bytesToRead=2048, pstTs=4643088, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #121, bytesToRead=2048, pstTs=4645005, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=25, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=4518142
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=0, size=768, pts=4518142, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=0, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4518142, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4342456
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4541361
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=115, total bytes=88320
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=1, size=768, pts=4541361, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=1, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4541361, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4365675
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=4564580
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=4587799
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=116, total bytes=89088
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=2, size=768, pts=4564580, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=2, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4564580, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4388894
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=3, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=117, total bytes=89856
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ I  ★★★ AudioEncoder.Callback.onOutputBufferAvailable CALLED ★★★ index=3, size=768, pts=4587799, flags=0
+ D  AudioEncoder.Callback: Calling muxAudio...
+ D  muxAudio: ★★★ CALLED ★★★ index=3, size=768, mIsRunning=true, mMuxerStarted=true, mAudioTrackIndex=1
+ D  muxAudio: Getting output buffer from encoder...
+ D  muxAudio: Got buffer, size=768, calling writeSampleData...
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=768, pts=4587799, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=768, pts=4412113
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=2, mForceStop=false
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=118, total bytes=90624
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  muxAudio: writeSampleData returned, releasing buffer...
+ D  muxAudio: Buffer released
+ D  muxAudio: ★★★ EXIT ★★★
+ D  AudioEncoder.Callback: muxAudio returned
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=12928, pts=780005068, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=12928, pts=4870258
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=1, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=0, mForceStop=false
+ D  pollInputIfNeed: Scheduled MSG_FEED_INPUT
+ I  processPendingFrames: Processing queued frame (bytes=10240, age=27ms, remainingQueue=0)
+ W  processPendingFrames: ★★★ WARNING ★★★ Frame too large! frameSize=10240, bufferCapacity=2048, will truncate
+ W  processPendingFrames: Truncated 8192 bytes (totalDropped=159744)
+ I  processPendingFrames: ★★★ QUEUE CLEARED ★★★ (totalQueued=25, totalDropped=0)
+ D  feedAudioEncoder [SINGLE]: Entering single-source mode, audioType=1
+ D  feedAudioEncoder [SINGLE]: AudioRecord=android.media.AudioRecord@d6e8d74, recordingState=3 (1=STOPPED, 3=RECORDING)
+ D  feedAudioEncoder [SINGLE]: eos=false
+ D  feedAudioEncoder [INTERNAL]: Using read(short[]) method for better compatibility
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=12747, pts=780032980, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=12747, pts=4898170
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  run: second+minute+hour------5+0+0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=13012, pts=780066542, flags=0, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=13012, pts=4931732
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  onStartCommand: recorderStopView.setOnClickListener
+ D  onStartCommand: stopView-->onCLick
+ D  quit: signalStop (false)
+ D  (video)stop()
+ D  onEndRecord
+ D  [c2.goke.avc.encoder#117] MediaCodec discarded an unknown buffer
+ D  onInputBufferReleased: frameIndex not found (151); ignored
+ D  onStartCommand: recording++++停止录屏----prepare
+ D  onInputBufferReleased: frameIndex not found (152); ignored
+ E  Unable to match the desired swap behavior.
+ D  feedAudioEncoder [INTERNAL]: readShorts=8192
+ D  feedAudioEncoder [INTERNAL]: AUDIO_DATA_CHECK allZeros=true maxValue=0
+ D  encode: Queued audio frame #123, bytesToRead=2048, pstTs=4816900, flags=1
+ D  encode: Requested next buffer, index=2, remainingBytes=14336
+ D  encode: Queued audio frame #124, bytesToRead=2048, pstTs=4821332, flags=1
+ D  encode: Requested next buffer, index=3, remainingBytes=12288
+ D  encode: Queued audio frame #125, bytesToRead=2048, pstTs=4827888, flags=1
+ D  encode: Requested next buffer, index=-1, remainingBytes=10240
+ W  encode: ★★★ BUFFER NOT AVAILABLE ★★★ Queueing 10240 bytes (count=26, queueSize=0)
+ I  encode: Frame queued successfully (queueSize=1, maxDepth=1)
+ I  ╔═══════════════════════════════════════════════════════════════
+ I  ║ 🎵 AUDIO RECORDING STATS (last 5s)
+ I  ╠═══════════════════════════════════════════════════════════════
+ I  ║ Total frames:     125
+ I  ║ Total bytes:      256000 (250 KB)
+ I  ║ Frames/sec:       24.33
+ I  ║ Data rate:        48.66 KB/s
+ I  ║ Silent frames:    26 consecutive
+ I  ║ Audio mode:       INTERNAL only
+ I  ╠═══════════════════════════════════════════════════════════════
+ I  ║ 📊 BUFFER QUEUE STATS
+ I  ╠═══════════════════════════════════════════════════════════════
+ I  ║ Buffer unavailable: 26 times
+ I  ║ Frames queued:      26
+ I  ║ Frames dropped:     0 (0.00%)
+ I  ║ Dropped bytes:      159744 (156 KB)
+ I  ║ Current queue size: 1
+ I  ║ Max queue depth:    1
+ I  ╚═══════════════════════════════════════════════════════════════
+ D  handleMessage: ★★★ MSG_DRAIN_OUTPUT received ★★★
+ D  offerOutput: ★★★ CALLED ★★★ mForceStop=false
+ D  offerOutput: [Loop 1] dequeueOutputBuffer returned index=0 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=0, size=768, flags=0, pts=4611018
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 2] dequeueOutputBuffer returned index=1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=1, size=768, flags=0, pts=4661647
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 3] dequeueOutputBuffer returned index=2 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  onInputBufferReleased: frameIndex not found (153); ignored
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=2, size=768, flags=0, pts=4684866
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 4] dequeueOutputBuffer returned index=3 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ I  offerOutput: ★★★ GOT AUDIO OUTPUT BUFFER ★★★ index=3, size=768, flags=0, pts=4708085
+ D  offerOutput: Calling onOutputBufferAvailable callback...
+ D  offerOutput: onOutputBufferAvailable callback returned
+ D  offerOutput: [Loop 5] dequeueOutputBuffer returned index=-1 (-1=TRY_AGAIN, -2=OUTPUT_FORMAT_CHANGED, -3=OUTPUT_BUFFERS_CHANGED)
+ D  offerOutput: [Loop 5] No more buffers, breaking. Total loops=5
+ D  offerOutput: ★★★ EXIT ★★★ totalLoops=5
+ D  pollInputIfNeed: mMuxingOutputBufferIndices.size()=4, mForceStop=false
+ D  handleMessage: MSG_DRAIN_OUTPUT completed
+ D  onInputBufferReleased: frameIndex not found (154); ignored
+ D  onInputBufferReleased: frameIndex not found (155); ignored
+ D  onInputBufferReleased: frameIndex not found (156); ignored
+ D  onInputBufferReleased: frameIndex not found (157); ignored
+ D  onInputBufferReleased: frameIndex not found (158); ignored
+ D  onInputBufferReleased: frameIndex not found (159); ignored
+ D  onInputBufferReleased: frameIndex not found (160); ignored
+ D  handleMessage: MSG_ERROR-->msg.arg1==0
+ D  writeSampleData: ★★★ CALLED ★★★ track=0 (VIDEO), size=0, pts=0, flags=4, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=0 (VIDEO), size=0, pts=0
+ V  Track event err/info msg:101, trackId:1, type:1000,val:0
+ I  Received total/0-length (150/0) buffers and encoded 150 frames. - Video
+ D  writeSampleData: Muxer write completed successfully
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  writeSampleData: ★★★ CALLED ★★★ track=1 (AUDIO), size=0, pts=0, flags=4, mPauseMux=false
+ I  writeSampleData: ★★★ WRITING TO MUXER ★★★ track=1 (AUDIO), size=0, pts=0
+ D  writeSampleData: Muxer write completed successfully
+ I  writeSampleData: AUDIO frame written! Total audio frames=119, total bytes=90624
+ D  writeSampleData: ★★★ EXIT ★★★
+ D  onStop: 启动SaveActivity，stopReason=0
+ W  Calling a method in the system process without a qualified user: android.app.ContextImpl.startActivity:1102 android.content.ContextWrapper.startActivity:436 com.hht.oemscreenrecoder.screenrecorder.ScreenRecordHelper$newRecorder$1.onStop:176 com.hht.oemscreenrecoder.yorm.ScreenRecorder$CallbackHandler.handleMessage:228 android.os.Handler.dispatchMessage:106
+ W  Calling a method in the system process without a qualified user: android.app.ContextImpl.startActivity:1114 android.app.ContextImpl.startActivity:1103 android.content.ContextWrapper.startActivity:436 com.hht.oemscreenrecoder.screenrecorder.ScreenRecordHelper$newRecorder$1.onStop:176 com.hht.oemscreenrecoder.yorm.ScreenRecorder$CallbackHandler.handleMessage:228
+ V  Track event err/info msg:101, trackId:2, type:1000,val:0
+ I  Received total/0-length (118/0) buffers and encoded 118 frames. - Audio
+ I  Audio track drift time: 0 us
+ D  evictor expired: 1, evicted: 0
+ D  onEndRecord
+ D  (video)releaseAsync(), mCodec: 0xb4000070f013a8a0, mLooper: 0xb4000070b0126bf0
+ D  release: START - ensuring AudioRecord resources are freed
+ I  onLastStrongRef automatically unlinking death recipients
+ D  flushMediametrics
+ D  flushMediametrics
+ W  no metrics handle found
+ D  (audio)stop()
+ D  [c2.android.aac.encoder#411] MediaCodec discarded an unknown buffer
+ D  [c2.android.aac.encoder#411] MediaCodec discarded an unknown buffer
+ D  [c2.android.aac.encoder#411] MediaCodec discarded an unknown buffer
+ D  [c2.android.aac.encoder#411] MediaCodec discarded an unknown buffer
+ D  release: Releasing AudioRecord resources...
+ D  release: Releasing mMic
+ D  release: Releasing mAudioRecord (INTERNAL - AudioPlaybackCapture)
+ W  release: Error stopping mAudioRecord
+    java.lang.IllegalStateException: stop() called on an uninitialized AudioRecord.
+    	at android.media.AudioRecord.stop(AudioRecord.java:1542)
+    	at com.hht.oemscreenrecoder.yorm.MicRecorder$1.run(MicRecorder.java:235)
+    	at android.os.Handler.handleCallback(Handler.java:958)
+    	at android.os.Handler.dispatchMessage(Handler.java:99)
+    	at android.os.Looper.loopOnce(Looper.java:205)
+    	at android.os.Looper.loop(Looper.java:294)
+    	at android.os.HandlerThread.run(HandlerThread.java:67)
+ D  release: Releasing encoder
+ D  (audio)releaseAsync(), mCodec: 0xb4000070f0135c50, mLooper: 0xb4000070b012ee70
+ D  release: All AudioRecord resources released successfully
+ I  onLastStrongRef automatically unlinking death recipients
+ D  release: HandlerThread quit
+ D  release: END
+ D  reset()
+ D  Video track stopping. Stop source
+ D  Video track source stopping
+ D  Video track source stopped
+ D  Video track stopped. Status:0. Stop source
+ D  Audio track stopping. Stop source
+ D  Audio track source stopping
+ D  Audio track source stopped
+ D  bufferpool2 0xb4000070f0157058 : 0(0 size) total buffers - 0(0 size) used buffers - 121/126 (recycle/alloc) - 5/250 (fetch/transfer)
+ D  Audio track stopped. Status:0. Stop source
+ D  Duration from tracks range is [4435332, 4965294] us
+ D  flushMediametrics
+ D  flushMediametrics
+ W  no metrics handle found
+ D  0 chunks are written in the last batch
+ D  WriterThread stopped. Status:0
+ I  Adjust the moov start time from 0 us -> 0 us
+ I  The mp4 file will not be streamable.
+ I  MOOV atom was written to the file
+ D  release()
+ D  onCreate: stopReason=0
+ I  start init SmartSlideOverScroller and get the overscroller config
+ I  get the overscroller config
+ D  mIsOptimizeEnable = true
+ E  Unable to match the desired swap behavior.
+ E  Unable to match the desired swap behavior.
+ D  final fsync() takes 314 ms, file size 4485793
+ D  MP4WtrCtrlHlpLooper stopped
+ D  Top 5 write durations(microseconds): #1:1907 #2:1983 #3:2334 #4:2510 #5:3454
+ D  reset()
+ D  Video track stopping. Stop source
+ E  Stop() called but track is not started or stopped
+ D  Audio track stopping. Stop source
+ E  Stop() called but track is not started or stopped
+ W  sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@f3ba017
+ W  sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@8fa3718
+ D  evictor expired: 1, evicted: 1

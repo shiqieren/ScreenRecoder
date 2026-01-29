@@ -1,0 +1,187 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+def keystoreProps = new Properties()
+keystoreProps.load(new FileInputStream(rootProject.file("keystore.properties")))
+android {
+    namespace 'com.hht.oemscreenrecoder'
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+
+        release {
+            storeFile file("hht.jks")
+            storePassword "android"
+            keyAlias "android"
+            keyPassword "android"
+        }
+
+        debug {
+            storeFile file("hht.jks")
+            storePassword "android"
+            keyAlias "android"
+            keyPassword "android"
+        }
+
+//        edla {
+//            storeFile file("311d2_edla.jks")
+//            storePassword "android"
+//            keyAlias "android"
+//            keyPassword "android"
+//        }
+        optomaa24 {
+            keyAlias "optoma-android"
+            keyPassword "optoma-android"
+            storeFile file("platform_rk3576.jks")
+            storePassword "optoma-android"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        a24optoma3576 {
+            keyAlias "hitevision"
+            keyPassword "hitevision"
+            storeFile file("hitevision.jks")
+            storePassword "hitevision"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        v100channel {
+            keyAlias "mykey"
+            keyPassword "hht2020"
+            storeFile file("24platform.keystore")
+            storePassword "hht2020"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    productFlavors {
+        optomaa24 {
+            signingConfig signingConfigs.optomaa24
+            //是否需要申请系统权限.
+            buildConfigField "boolean", "isSystem", "true"
+            buildConfigField "int", "channelType", "01"
+
+        }
+        a24 {
+            signingConfig signingConfigs.a24optoma3576
+            //是否需要申请系统权限.
+            buildConfigField "boolean", "isSystem", "true"
+            buildConfigField "int", "channelType", "01"
+
+        }
+
+        v100 {
+            signingConfig  signingConfigs.v100channel
+            buildConfigField "boolean", "isSystem", "true"
+            buildConfigField "int", "channelType", "02"
+        }
+
+    }
+
+    buildTypes {
+        debug{
+            initWith(buildTypes.release)
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+//        edla {
+//            minifyEnabled false
+//            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.a24optoma3576
+//        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.hht.oemscreenrecoder"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionName buildVersion("name")
+        versionCode getCurrentDateAsVersionCode()
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        flavorDimensions "factory"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ScreenRecoder_" +versionName+"_${variant.flavorName}" +".apk"
+        }
+    }
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+static def buildTime() {
+    def date = new Date()
+    def versionCode = date.format('yyyyMMddHHmm')
+    return versionCode
+}
+
+static def buildVersion(type) {
+    int importantVersion = 1
+    int gitCommits = 4
+    def date = new Date()
+    def yearVersion = date.format('yy')
+    def dataVersion = date.format('yyyyMMddHHmm')
+    if("code" == type){
+        return gitCommits
+    } else if("name" == type){
+        return "$importantVersion.$yearVersion.$gitCommits"+"_$dataVersion"
+    }
+}
+
+def getCurrentDateAsVersionCode() {
+    def date = new Date()
+    return date.format('yyMMdd').toInteger()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    a24Implementation files('libs\\classes.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.8.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.blankj:utilcodex:1.31.1'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.getActivity:XXPermissions:20.0'
+}

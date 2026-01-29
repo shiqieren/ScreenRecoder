@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-10-30 11:06 >> start-->
+    <string name="app_name">Képernyőrögzítő</string>
+    <string name="device_not_support_screen_record">Sajnos a Képernyőrögzítő nem kompatibilis az eszközöddel.</string>
+    <string name="permission_denied">Engedélyeket kell adni a Képernyőrögzítőnek, különben a képernyő nem rögzíthető.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">Menti a rögzített adatokat?</string>
+    <string name="cancel">Mégse</string>
+    <string name="ok">OK</string>
+    <string name="low_space_content">A tárhelyed majdnem megtelt, mented az aktuális adatokat?</string>
+    <string name="save">Mentés</string>
+    <string name="newline_recording">Képernyőrögzítő</string>
+    <string name="tv_quality">Minőség</string>
+    <string name="tv_system_audio">Rendszerhang</string>
+    <string name="tv_micophone">Mikrofon</string>
+    <string name="enough_memory">Nincs elég memória</string>
+    <string name="storage_insufficient">A felvétel megkezdéséhez legalább 20 MB szabad hely szükséges.</string>
+    <string name="setting_title">Beállítások</string>
+    <string name="mic_option">Mikrofon opció</string>
+    <string name="Resolution">Felbontás</string>
+    <string name="built_mic">Beépített mikrofon</string>
+    <string name="system_auto">Rendszerhang</string>
+    <string name="micAndSystem">Mikrofon és rendszerhang</string>
+    <string name="mute">Némítás</string>
+    <string name="four_definition">3840x2160</string>
+    <string name="two_definition">1920x1080</string>
+    <string name="live_definition">1280x720</string>
+    <string name="high_definition">960x720</string>
+    <string name="out_of_memory">Nincs elég memória</string>
+    <string name="recording_stop">A felvétel leállt, mert nincs elég hely a memóriában. A felvétel megkezdéséhez legalább 20 MB szabad hely szükséges.</string>
+    <string name="exit_screen">Kilépés a Képernyőrögzítőből?</string>
+    <string name="exit_message">Biztosan kilépsz ebből a bővítményből?</string>
+    <string name="exit">Kilépés</string>
+    <string name="save_to">Mentés ide:</string>
+    <string name="locality">Helyi tárhely</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">Mentés képernyőfelvétel-mappába</string>
+    <!--2025-10-30 11:06 >> end-->
+</resources>

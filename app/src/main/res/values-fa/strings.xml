@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--2025-11-10 20:21 >> start-->
+    <string name="app_name">ضبط صفحه نمایش</string>
+    <string name="device_not_support_screen_record">متاسفانه، ضبط صفحه نمایش با دستگاه شما سازگار نیست.</string>
+    <string name="permission_denied">برای این کار باید مجوزهای لازم برای ضبط صفحه نمایش را بدهید، در غیر این صورت صفحه نمایش قابل ضبط نیست.</string>
+    <string name="record_minute_time">%1$02d:%2$02d:%3$02d</string>
+    <string name="low_space_title">آیا می‌خواهید داده‌های ضبط شده را ذخیره کنید؟</string>
+    <string name="cancel">لغو</string>
+    <string name="ok">تایید</string>
+    <string name="low_space_content">فضای ذخیره‌سازی شما تقریباً پر است، آیا می‌خواهید داده‌های فعلی را ذخیره کنید؟</string>
+    <string name="save">ذخیره</string>
+    <string name="newline_recording">ضبط صفحه نمایش</string>
+    <string name="tv_quality">کیفیت</string>
+    <string name="tv_system_audio">صدای سیستم</string>
+    <string name="tv_micophone">میکروفون</string>
+    <string name="enough_memory">حافظه کافی نیست</string>
+    <string name="storage_insufficient">برای شروع ضبط، حداقل 20 مگابایت فضای خالی مورد نیاز است.</string>
+    <string name="setting_title">تنظیمات</string>
+    <string name="mic_option">گزینه میکروفون</string>
+    <string name="Resolution">وضوح</string>
+    <string name="built_mic">میکروفون داخلی</string>
+    <string name="system_auto">صدای سیستم</string>
+    <string name="micAndSystem">میکروفون و صدای سیستم</string>
+    <string name="mute">بی‌صدا</string>
+    <string name="four_definition">3840 x2160</string>
+    <string name="two_definition">1920 x1080</string>
+    <string name="live_definition">1280 x720</string>
+    <string name="high_definition">960 x720</string>
+    <string name="out_of_memory">حافظه کامل است</string>
+    <string name="recording_stop">ضبط به دلیل کمبود فضای کافی در حافظه متوقف شده است. برای شروع ضبط، حداقل 20 مگابایت فضای خالی مورد نیاز است.</string>
+    <string name="exit_screen">خروج از ضبط صفحه نمایش؟ آیا مطمئن هستید که می‌خواهید از این افزونه خارج شوید؟</string>
+    <string name="exit">خروج</string>
+    <string name="save_to">ذخیره در</string>
+    <string name="locality">ذخیره‌سازی محلی</string>
+    <string name="axue_usb">USB %1$s</string>
+    <string name="save_success">ذخیره در پوشه ضبط صفحه</string>
+    <!--2025-11-10 20:21 >> end-->
+</resources>
