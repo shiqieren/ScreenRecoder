@@ -284,6 +284,9 @@ public class ScreenRecorder {
         mVideoBytesWritten = 0;
         mAudioBytesWritten = 0;
         mLastMuxerLogTimeMs = System.currentTimeMillis();
+        mVideoPtsOffset = 0;
+        mAudioPtsOffset = 0;
+        mLastVideoPtsUs = 0;
         Log.d(TAG, "record: Muxer statistics reset - starting recording");
 
         try {
@@ -488,6 +491,7 @@ public class ScreenRecorder {
     }
 
     private long mVideoPtsOffset, mAudioPtsOffset;
+    private long mLastVideoPtsUs = 0;
 
     private void resetAudioPts(MediaCodec.BufferInfo buffer) {
         if (VERBOSE) {
@@ -518,26 +522,34 @@ public class ScreenRecorder {
     private void resetVideoPts(MediaCodec.BufferInfo buffer) {
         // ===== 墙钟模式：保持相对时间间隔，只调整起点 =====
         if (mUseWallClockPTS && mRecordingStartTimeNanos > 0) {
-            // 记录第一帧的 codec pts 作为 offset
             if (mVideoPtsOffset == 0) {
                 mVideoPtsOffset = buffer.presentationTimeUs;
-                buffer.presentationTimeUs = 0;  // 第一帧从 0 开始
+                buffer.presentationTimeUs = 0;
+                mLastVideoPtsUs = 0;
                 Log.i(TAG, String.format(java.util.Locale.US,
                     "resetVideoPts [WALL_CLOCK]: First frame, codecPts=%d, offset=%d, newPts=0",
                     mVideoPtsOffset, mVideoPtsOffset));
             } else {
-                // 后续帧：保持相对时间间隔
                 long originalPts = buffer.presentationTimeUs;
                 long relativePts = originalPts - mVideoPtsOffset;
-
-                // 处理暂停延迟
                 long pauseDelayUs = pauseDelayTime.get() / 1000;
-                buffer.presentationTimeUs = relativePts - pauseDelayUs;
+                long adjustedPts = Math.max(0, relativePts - pauseDelayUs);
+
+                if (adjustedPts < mLastVideoPtsUs) {
+                    Log.w(TAG, "resetVideoPts [WALL_CLOCK]: timestamp went backwards, clamping");
+                    adjustedPts = mLastVideoPtsUs + 1000;
+                }
+                mLastVideoPtsUs = adjustedPts;
+                buffer.presentationTimeUs = adjustedPts;
 
                 if (VERBOSE) {
                     Log.d(TAG, String.format(java.util.Locale.US,
                         "resetVideoPts [WALL_CLOCK]: codecPts=%d, offset=%d, relativePts=%d, pauseDelay=%d, finalPts=%d",
-                        originalPts, mVideoPtsOffset, relativePts, pauseDelayUs, buffer.presentationTimeUs));
+                        originalPts,
+                        mVideoPtsOffset,
+                        relativePts,
+                        pauseDelayUs,
+                        buffer.presentationTimeUs));
                 }
             }
             return;
